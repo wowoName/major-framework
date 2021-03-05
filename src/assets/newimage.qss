@@ -1,0 +1,1609 @@
+
+
+/*FxMessageBox*/
+
+QDialog QPushButton
+{
+    border-image: url(:/imageBlue/Login/LoginNormal.png);
+}
+QDialog QPushButton
+{
+    border-image: url(:/imageBlue/Login/LoginClick.png);
+}
+QDialog QPushButton
+{
+    border-image: url(:/imageBlue/Login/LoginClick.png);
+}
+/*QInputDialog*/
+QInputDialog QAbstractButton
+{
+    color:#d4f1ff;
+    font:57 16px "文泉驿正黑";
+min-width:80px;
+min-height:29px;
+}
+
+/*CFileDialog*/
+QFileDialog QAbstractButton
+{
+    color:#d4f1ff;
+    font:57 16px "文泉驿正黑";
+}
+
+QFileDialog QTreeView,QFileDialog QListView,QFileDialog QTableView
+{
+    background-color:#001f33;
+    border:1px solid #00506a;
+}
+
+QFileDialog QTableView::item:selected,QFileDialog QTreeView::item:selected,QFileDialog QListView::item:selected,QFileDialog QTreeWidget::item:selected
+{
+    image:none;
+    background-color:rgb(48,141,198);
+    color:#d4f1ff;
+}
+
+/*CErrorMessage*/
+
+QErrorMessage  QTextEdit
+{
+    background-color:#001f33;
+    border:1px solid #00506a;
+    height:30px;
+    border-radius:2px;
+    color:#d4f1ff;
+    font:57 16px "文泉驿正黑";
+}
+QErrorMessage QAbstractButton
+{
+    color:#d4f1ff;
+    font:57 16px "文泉驿正黑";
+min-width:80px;
+min-height:29px;
+}
+QErrorMessage  QAbstractButton
+{
+    border-image: url(:/imageBlue/Login/LoginNormal.png);
+}
+QErrorMessage  QAbstractButton:pressed
+{
+    border-image: url(:/imageBlue/Login/LoginClick.png);
+}
+QErrorMessage  QAbstractButton:hover
+{
+    border-image: url(:/imageBlue/Login/LoginClick.png);
+}
+/* CMsgBox */
+QMessageBox QAbstractButton
+{
+    color:#d4f1ff;
+    font:57 16px "文泉驿正黑";
+min-width:80px;
+min-height:29px;
+}
+QMessageBox  QAbstractButton
+{
+    border-image: url(:/imageBlue/Login/LoginNormal.png);
+}
+QMessageBox  QAbstractButton:pressed
+{
+    border-image: url(:/imageBlue/Login/LoginClick.png);
+}
+QMessageBox  QAbstractButton:hover
+{
+    border-image: url(:/imageBlue/Login/LoginClick.png);
+}
+/* BaseDialog */
+QDialog[BaseDialog=true] QLabel,QDialog[BaseDialog=true] QPushButton
+{
+    color:#d4f1ff;
+    font-family: "文泉驿正黑";
+}
+
+QDialog[BaseDialog=true] QGroupBox
+{
+color:#d4f1ff;
+font:57 16px "文泉驿正黑";
+background-color:transparent;
+border:2px solid #00506a;
+border-radius:5px;
+margin-top:8px;
+}
+
+QDialog[BaseDialog=true] QGroupBox::title
+{
+color:#d4f1ff;
+font:57 14px "文泉驿正黑";
+subcontrol-origin:margin;
+bottom:-1px;
+left:10px;
+}
+
+QDialog[BaseDialog=true] QGroupBox::indicator:unchecked
+{
+        border-image: url(:/imageBlue/Common/cbunchecked.png);
+}
+
+QDialog[BaseDialog=true] QGroupBox::indicator:unchecked:hover
+{
+        border-image: url(:/imageBlue/Common/cbhover.png);
+}
+
+QDialog[BaseDialog=true] QGroupBox::indicator:checked
+{
+        border-image: url(:/imageBlue/Common/cbchecked.png);
+}
+
+QDialog[BaseDialog=true]  QTableWidget
+{
+    alternate-background-color:#063454;
+    background-color:#002945;
+    show-decoration-selected:1;
+    font:57 14px "文泉驿正黑";
+    border:1px solid #20617c;
+    color:#d4f1ff;
+    gridline-color:#00506a;
+}
+
+
+
+QDialog[BaseDialog=true]  QTableWidget::item
+{
+    height:32px;
+}
+
+QDialog[BaseDialog=true]  QTableView
+{
+    alternate-background-color:#063454;
+    background-color:#002945;
+    show-decoration-selected:1;
+    font:57 14px "文泉驿正黑";
+    border:1px solid #20617c;
+    gridline-color:#00506a;
+}
+
+QDialog[BaseDialog=true]  QTableView QTableCornerButton::section
+{
+        background-color:#002945;
+}
+
+QDialog[BaseDialog=true]  QTableView::item
+{
+    height:32px;
+}
+
+QDialog[BaseDialog=true]  QTableView::indicator:enabled:unchecked
+{
+border-image: url(:/imageBlue/Common/cbunchecked.png);
+}
+
+QDialog[BaseDialog=true]  QTableView::indicator:enabled:indeterminate
+{
+border-image: url(:/imageBlue/Common/cbunchecked.png);
+}
+
+QDialog[BaseDialog=true]  QTableView::indicator:enabled:unchecked:hover
+{
+border-image: url(:/imageBlue/Common/cbhover.png);
+}
+
+QDialog[BaseDialog=true]  QTableView::indicator:enabled:checked
+{
+border-image: url(:/imageBlue/Common/cbchecked.png);
+}
+
+QDialog[BaseDialog=true]  QTreeView::indicator:enabled:indeterminate
+{
+border-image: url(:/imageBlue/Common/cbunchecked.png);
+}
+
+QDialog[BaseDialog=true]  QTreeView::indicator:enabled:unchecked
+{
+border-image: url(:/imageBlue/Common/cbunchecked.png);
+}
+
+QDialog[BaseDialog=true]  QTreeView::indicator:enabled:unchecked:hover
+{
+border-image: url(:/imageBlue/Common/cbhover.png);
+}
+
+QDialog[BaseDialog=true]  QTreeView::indicator:enabled:checked
+{
+border-image: url(:/imageBlue/Common/cbchecked.png);
+}
+
+QDialog[BaseDialog=true]  QTreeView::indicator:enabled:indeterminate
+{
+border-image: url(:/imageBlue/Common/cbcheckedun.png);
+}
+
+QDialog[BaseDialog=true]   QCheckBox
+{
+     color:#d4f1ff;
+    font:57 16px "文泉驿正黑";
+outline:none;
+}
+
+QDialog[BaseDialog=true]   QCheckBox:disabled
+{
+    color:rgb(80,80,80);
+    font:57 16px "文泉驿正黑";
+    outline:none;
+}
+
+QDialog[BaseDialog=true]   QCheckBox::indicator:unchecked
+{
+        border-image: url(:/imageBlue/Common/cbunchecked.png);
+}
+
+QDialog[BaseDialog=true]   QCheckBox::indicator:unchecked:hover
+{
+        border-image: url(:/imageBlue/Common/cbhover.png);
+}
+
+QDialog[BaseDialog=true]   QCheckBox::indicator:checked
+{
+        border-image: url(:/imageBlue/Common/cbchecked.png);
+}
+
+
+QDialog[BaseDialog=true]  QPushButton
+{
+    border-image: url(:/imageBlue/Login/LoginNormal.png);
+}
+QDialog[BaseDialog=true]  QPushButton:pressed
+{
+    border-image: url(:/imageBlue/Login/LoginClick.png);
+}
+QDialog[BaseDialog=true]  QPushButton:hover
+{
+    border-image: url(:/imageBlue/Login/LoginClick.png);
+}
+
+QDialog[BaseDialog=true]  QPushButton#searchButton
+{
+    border-image: url(:/imageBlue/Login/LoginNormal.png);
+}
+QDialog[BaseDialog=true]  QPushButton#searchButton:pressed
+{
+    border-image: url(:/imageBlue/Login/LoginClick.png);
+}
+QDialog[BaseDialog=true]  QPushButton#searchButton:hover
+{
+    border-image: url(:/imageBlue/Login/LoginClick.png);
+}
+
+QDialog[BaseDialog=true]  QLineEdit
+{
+    background-color:#001f33;
+    border:1px solid #00506a;
+    height:30px;
+    border-radius:2px;
+    color:#d4f1ff;
+    font:57 16px "文泉驿正黑";
+}
+
+QDialog[BaseDialog=true]   QHeaderView
+{
+    background-color:#0f456a;
+    height:32px;
+    color:#d4f1ff;
+}
+
+QDialog[BaseDialog=true]   QHeaderView::section
+{
+    background-color:#0f456a;
+    height:32px;
+}
+
+QDialog[BaseDialog=true]   QTreeView
+{
+    alternate-background-color:#063454;
+    background-color:#002945;
+    show-decoration-selected:0;
+    font:57 14px "文泉驿正黑";
+    border:1px solid #20617c;
+    outline:none;
+    color:#d4f1ff;
+    font:57 16px "文泉驿正黑";
+}
+
+
+
+QDialog[BaseDialog=true]   QTreeView::item
+{
+    height:32px;
+     border:none;
+     background-color:transparent;
+      margin:0px 0px 0px 0px;
+     background-clip:margin;
+
+}
+
+QDialog[BaseDialog=true]   QTreeView::item:selected
+{
+    height:32px;
+    /*image:url(:/imageBlue/Common/itemselect.png);*/
+    border:none;
+    /*background-color:transparent;*/
+    background-color:rgb(48,141,198);
+    color:#d4f1ff;
+}
+
+QDialog[InterfaceRcvCountWidget=true]   QTreeView::item:selected
+{
+    height:32px;
+    image:none;
+    background-color:rgb(48,141,198);
+    color:#d4f1ff;
+}
+
+QDialog[MissionGroupSelectDlg=true]   QTreeView::item:selected
+{
+    height:32px;
+    image:none;
+    background-color:rgb(48,141,198);
+    color:#d4f1ff;
+}
+
+
+/*
+QDialog[BaseDialog=true]   QTreeView::branch
+{
+    background-color:#002945;
+}
+
+QDialog[BaseDialog=true]   QTreeView::branch:has-siblings:!adjoins-item
+{
+    background-color:transparent;
+}
+
+QDialog[BaseDialog=true]   QTreeView::branch:hover
+{
+     background-color:#002945;
+}
+
+QDialog[BaseDialog=true]   QTreeView::branch:selected
+{
+     background-color:#002945;
+}*/
+
+QDialog[BaseDialog=true]   QTreeView::branch:has-children:!has-siblings:closed,
+QDialog[BaseDialog=true]   QTreeView::branch:closed:has-children:has-siblings
+{
+    image:url(:/imageBlue/Common/unfold.png);
+    background-color:#002945;
+
+}
+QDialog[BaseDialog=true]   QTreeView::branch:has-children:!has-siblings:open,
+QDialog[BaseDialog=true]   QTreeView::branch:open:has-children:has-siblings
+{
+    image:url(:/imageBlue/Common/fold.png);
+    background-color:#002945;
+}
+
+QDialog[BaseDialog=true]  QListWidget
+{
+    background-color:#002945;
+    outline:none;
+    color:#d4f1ff;
+    font:57 16px "文泉驿正黑";
+}
+
+
+QDialog[BaseDialog=true] QRadioButton
+{
+    color:#d4f1ff;
+    font:57 16px "文泉驿正黑";
+}
+
+QDialog[BaseDialog=true] QComboBox
+{
+    background-color:#001f33;
+    combobox-popup:0;
+    border:2px solid #00536e;
+    border-radius:2px;
+    color:#d4f1ff;
+    font:57 16px "文泉驿正黑";
+}
+QDialog[BaseDialog=true] QComboBox::down-arrow
+{
+   image: url(:/imageBlue/Common/combobox.png);
+   border:0px solid #d4f1ff;
+   background-color:transparent;
+   margin:0px -5px 0px 0px;
+}
+
+QDialog[BaseDialog=true] QComboBox::drop-down
+{
+   border:0px solid #d4f1ff;
+   background-color:transparent;
+   margin:0px 10px 0px 0px;
+}
+
+QDialog[BaseDialog=true] QComboBox QAbstractItemView
+{
+    border:1px solid #00536e;
+    background-color:#001f33;
+    border-radius:5px;
+    color:#d4f1ff;
+    font:57 16px "文泉驿正黑";
+}
+
+QDialog[BaseDialog=true] QComboBox QAbstractItemView::item
+{
+    height:32px;
+    background-color:transparent;
+    color:#d4f1ff;
+    font:57 16px "文泉驿正黑";
+
+}
+
+QDialog[BaseDialog=true] QComboBox QAbstractItemView::item:hover
+{
+    color:#d4f1ff;
+    background-color: #003f59;
+}
+
+QDialog[BaseDialog=true] QComboBox QAbstractItemView::item:selected
+{
+    color:#d4f1ff;
+    background-color: #003f59;
+}
+
+
+/*水平*/
+QDialog[BaseDialog=true]    QScrollBar::horizontal
+{
+    background-color:#1e2844;
+    border:1px solid #00506a;
+    margin:0px,0px,0px,0px;
+    padding-left:12px;
+    padding-right:12px;
+}
+
+QDialog[BaseDialog=true]    QScrollBar::handle:horizontal
+{
+    background-color:#305485;
+    height:8px;
+    border-radius:4px;
+    min-width:40px;
+}
+
+QDialog[BaseDialog=true]    QScrollBar::add-line:horizontal
+{
+    width:12px;
+    height:24px;
+    background-color:#20617c;
+    subcontrol-position:right;
+}
+
+QDialog[BaseDialog=true]    QScrollBar::sub-line:horizontal
+{
+    width:12px;
+    height:24px;
+    background-color:#20617c;
+    subcontrol-position:left;
+}
+
+QDialog[BaseDialog=true]    QScrollBar::add-page:horizontal,QDialog[BaseDialog=true]    QScrollBar::sub-page:horizontal
+{
+    height:24px;
+    background-color:#002945;
+}
+
+/*垂直*/
+QDialog[BaseDialog=true]    QScrollBar::vertical
+{
+    background-color:#1e2844;
+    border:1px solid #00506a;
+    margin:0px,0px,0px,0px;
+    padding-top:12px;
+    padding-bottom:12px;
+}
+
+QDialog[BaseDialog=true]    QScrollBar::handle:vertical
+{
+    background-color:#305485;
+    width:8px;
+    border-radius:4px;
+    min-height:40px;
+}
+
+QDialog[BaseDialog=true]    QScrollBar::add-line:vertical
+{
+    height:12px;
+    width:24px;
+    background-color:#20617c;
+    subcontrol-position:bottom;
+}
+
+QDialog[BaseDialog=true]    QScrollBar::sub-line:vertical
+{
+    height:12px;
+    width:24px;
+    background-color:#20617c;
+    subcontrol-position:top;
+}
+
+QDialog[BaseDialog=true]    QScrollBar::add-page:vertical,QDialog[BaseDialog=true]    QScrollBar::sub-page:vertical
+{
+    width:24px;
+    background-color:#002945;
+}
+
+QDialog[BaseDialog=true]    QTreeView QScrollBar::vertical
+{
+    background-color:#1e2844;
+    border:1px solid #00506a;
+    margin:32px,0px,-12px,0px;
+    padding-top:12px;
+    padding-bottom:12px;
+}
+
+QDialog[BaseDialog=true]    QTreeView QScrollBar::handle:vertical
+{
+    background-color:#305485;
+    width:8px;
+    border-radius:4px;
+    min-height:40px;
+}
+
+QDialog[BaseDialog=true]    QTreeView QScrollBar::add-line:vertical
+{
+    height:12px;
+    width:24px;
+    background-color:#20617c;
+    subcontrol-position:bottom;
+}
+
+QDialog[BaseDialog=true]    QTreeView QScrollBar::sub-line:vertical
+{
+    height:12px;
+    width:24px;
+    background-color:#20617c;
+    subcontrol-position:top;
+}
+
+
+
+
+/* CommomPlugin Window */
+
+QLabel#ljAlignJustifyLabel
+{
+    font:57 42px "文泉驿正黑";
+}
+
+QWidget#CommonInfoActWnd QLabel
+{
+    color:#d4f1ff;
+    font:57 16px "文泉驿正黑";
+}
+
+QWidget#CommonInfoActWnd QStackedWidget
+{
+    background-color:#003152;
+    color:#d4f1ff;
+    font:57 16px "文泉驿正黑";
+}
+
+QWidget#CommonInfoActWnd QWidget
+{
+    background-color:transparent;
+    color:#d4f1ff;
+    font:57 16px "文泉驿正黑";
+}
+
+QWidget#CommonInfoActWnd QTableView
+{
+    background-color:transparent;
+    color:#d4f1ff;
+    font:57 16px "文泉驿正黑";
+     border:none;
+}
+
+QWidget#CommonInfoActWnd QTableView::item
+{
+    background-color:transparent;
+    color:#d4f1ff;
+    font:57 16px "文泉驿正黑";
+    outline:none;
+}
+
+
+
+QWidget#CommonInfoActWnd QTableView::item:selected
+{
+     background-color:transparent;
+     color:#d4f1ff;
+     font:57 16px "文泉驿正黑";
+     outline:none;
+}
+
+QWidget#CommonInfoActWnd   QTableView::indicator:enabled:unchecked
+{
+border-image: url(:/imageBlue/Common/cbunchecked.png);
+}
+
+QWidget#CommonInfoActWnd   QTableView::indicator:enabled:unchecked:hover
+{
+border-image: url(:/imageBlue/Common/cbhover.png);
+}
+
+QWidget#CommonInfoActWnd   QTableView::indicator:enabled:checked
+{
+border-image: url(:/imageBlue/Common/cbchecked.png);
+}
+
+
+
+QTableWidget#ljTable_27,QTableWidget#ljTable_28,QTableWidget#ljTable_17,QTableWidget#ljTable_18,QTableWidget#ljTable_19,QTableWidget#ljTable_20
+{
+    font:57 16px "文泉驿正黑";
+    border:0px;
+}
+
+/* Login Window */
+
+QDialog#LoginDlgClass QWidget
+{
+    color:#d4f1ff;
+    font:57 16px "文泉驿正黑";
+
+}
+QWidget#LoginInDlg
+{
+    border-image: url(:/imageBlue/Login/Login.png);
+}
+
+QDialog#LoginDlgClass QLabel#Login_Label
+{
+    font: 75 32px "文泉驿正黑";
+}
+
+QWidget#LoginIn_widget
+{
+    border-image: url(:/imageBlue/Login/LineEdit.png);
+}
+QWidget#LoginIn_widget_2
+{
+    border-image: url(:/imageBlue/Login/LineEdit.png);
+}
+
+QLabel#LoginIn_usr
+{
+    border-image: url(:/imageBlue/Login/usr.png);
+}
+QLabel#LoginIn_passward
+{
+    border-image: url(:/imageBlue/Login/password.png);
+}
+QLineEdit#userName
+{
+  background-color:transparent;
+  border:0px solid #d4f1ff;
+  border-image:none;
+}
+QLineEdit#passWord
+{
+  background-color:transparent;
+  border:0px solid #d4f1ff;
+  border-image:none;
+}
+
+QPushButton#cancelButton
+{
+    border-image: url(:/imageBlue/Login/cancleNormal.png);
+}
+QPushButton#cancelButton:pressed
+{
+    border-image: url(:/imageBlue/Login/cancleClick.png);
+}
+QPushButton#cancelButton:hover
+{
+    border-image: url(:/imageBlue/Login/clickHover.png);
+}
+
+QPushButton#okButton
+{
+    border-image: url(:/imageBlue/Login/LoginNormal.png);
+}
+QPushButton#okButton:pressed
+{
+    border-image: url(:/imageBlue/Login/LoginClick.png);
+}
+QPushButton#okButton:hover
+{
+    border-image: url(:/imageBlue/Login/LoginClick.png);
+}
+
+QComboBox#missionGroup
+{
+   border-image: url(:/imageBlue/Login/ComBox-down.png);
+   background-color:transparent;
+    combobox-popup:0;
+}
+QComboBox#missionGroup::down-arrow
+{
+   image: url(:/imageBlue/Login/stretch.png);
+   border:0px solid #d4f1ff;
+   background-color:transparent;
+}
+
+QComboBox#missionGroup::drop-down
+{
+   border:0px solid #d4f1ff;
+   background-color:transparent;
+   margin:0px 10px 0px 0px;
+}
+
+QComboBox#missionGroup QAbstractItemView
+{
+    border:1px solid #00536e;
+    background-color:#001f33;
+    border-radius:5px;
+}
+
+QComboBox#missionGroup QAbstractItemView::item
+{
+    height:32px;
+    background-color:transparent;
+
+}
+
+QComboBox#missionGroup QAbstractItemView::item:hover
+{
+    color:#d4f1ff;
+    background-color: #003f59;
+    border-image: url(:/imageBlue/Login/ComBox-Select.png);
+}
+
+QComboBox#missionGroup QAbstractItemView::item:selected
+{
+    color:#d4f1ff;
+    background-color: #003f59;
+    border-image: url(:/imageBlue/Login/ComBox-Select.png);
+}
+
+/* Start Window */
+QLabel#LabelIndentify1
+{
+   border-image: url(:/imageBlue/Login/Log1.png);
+}
+QLabel#LabelIndentify2
+{
+   border-image: url(:/imageBlue/Login/Log2.png);
+}
+
+/* Title Window */
+QWidget#CTopToolWindow QWidget
+{
+color:#d4f1ff;
+font:57 16px "文泉驿正黑";
+}
+
+QDockWidget QWidget
+{
+color:#d4f1ff;
+font:57 17px "文泉驿正黑";
+}
+
+
+QMainWindow
+{
+    background-color:#001f33;
+}
+
+QMainWindow::separator
+{
+    /*background-color:#00536e;*/
+    background-color:#00c0ff;
+    width:2px;
+    height:0px;
+    margin:0px;
+    padding:0px;
+}
+
+QWidget#CTopToolWindow
+{
+border-bottom:2px solid #00c0ff;
+}
+
+QWidget#CMenuBarWnd
+{
+   border-top:2px solid #00536e;
+}
+
+QWidget#CommonInfoActWnd
+{
+    border-top:2px solid #00536e;
+}
+
+QDockWidget#menu_dockwidget
+{
+    border-bottom:2px solid #00536e;
+}
+QLabel#titleLabel
+{
+    font:57 24px "文泉驿正黑";
+}
+
+QPushButton#pbToolSet
+{
+    border-image: url(:/imageBlue/Title/set.png);
+    outline:none;
+}
+
+QPushButton#pbToolSet:hover
+{
+    border-image: url(:/imageBlue/Title/set_hover.png);
+}
+QPushButton#pbToolSet:pressed
+{
+    border-image: url(:/imageBlue/Title/set_hover.png);
+}
+
+QPushButton#pbToolHelp
+{
+    border-image: url(:/imageBlue/Title/help.png);
+outline:none;
+}
+
+QPushButton#pbToolHelp:hover
+{
+    border-image: url(:/imageBlue/Title/helphover.png);
+}
+QPushButton#pbToolHelp:pressed
+{
+    border-image: url(:/imageBlue/Title/helphover.png);
+}
+
+QPushButton#action_Lock
+{
+    border-image: url(:/imageBlue/Title/lock.png);
+outline:none;
+}
+
+QPushButton#action_Lock:hover
+{
+    border-image: url(:/imageBlue/Title/lockhover.png);
+}
+QPushButton#action_Lock:pressed
+{
+    border-image: url(:/imageBlue/Title/lockhover.png);
+}
+
+
+QPushButton#actionChangeUser
+{
+    border-image: url(:/imageBlue/Title/usr.png);
+outline:none;
+}
+
+QPushButton#actionChangeUser:hover
+{
+    border-image: url(:/imageBlue/Title/usrhover.png);
+}
+QPushButton#actionChangeUser:pressed
+{
+    border-image: url(:/imageBlue/Title/usrhover.png);
+}
+
+QPushButton#pbMaxButton:checked
+{
+    border-image: url(:/imageBlue/Title/maxnormal.png);
+}
+QPushButton#pbMaxButton
+{
+    border-image: url(:/imageBlue/Title/max.png);
+outline:none;
+}
+
+QPushButton#pbClose
+{
+    border-image: url(:/imageBlue/Title/close.png);
+outline:none;
+}
+
+QPushButton#pbClose:hover
+{
+    border-image: url(:/imageBlue/Title/closehover.png);
+}
+
+QPushButton#pbMinButton
+{
+    border-image: url(:/imageBlue/Title/min.png);
+outline:none;
+}
+
+QWidget#titleBarWidget
+{
+    border-image: url(:/imageBlue/Title/titleBack.png);
+}
+
+/* TooBar Window */
+QPushButton#pbTaskGroup,QPushButton#pbTool,QPushButton#pbView,QPushButton#pbWindow,QPushButton#pbPrint,QPushButton#pbStore,QLabel#toolMeslabel
+{
+border-image: url(:/imageBlue/ToolBar/toolbar.png);
+outline:none;
+}
+
+QPushButton#EditMissionGroupAct,QPushButton#DesignerAct,QPushButton#actionRcvStatistic,QPushButton#interfaceManageAct,QPushButton#dataReplayAct,
+QPushButton#SendSwitchPageCommandAct,QPushButton#actionSwitchPageView,QPushButton#actionCentralMonitorView,QPushButton#fullScreenAct,QPushButton#fullScreenAct2,
+QPushButton#fullScreenAct3,QPushButton#CommonInfoAct,QPushButton#RightDockShowAct,QPushButton#BottomDockShowAct,QPushButton#pbLog,
+QPushButton#pbBottomPlugin,QPushButton#actionSplitterV,QPushButton#actionSplitterH,QPushButton#actionCancelSplitter,QPushButton#actionReloadPage,
+QPushButton#pbwindowMenu,QPushButton#actionPrint,QPushButton#actionPrintNoTitle,QPushButton#actionSnapshot,QPushButton#actionSnapShotMdi,
+QPushButton#pbAddFavoriteButton,QPushButton#pbFavorite,QPushButton#CImportWarnLabel,QPushButton#MessageLabel,QPushButton#OpenHomePage
+{
+    border:0px solid #d4f1ff;
+    background-color:transparent;
+    border-image:none;
+    outline:none;
+}
+QPushButton#EditMissionGroupAct:hover,QPushButton#DesignerAct:hover,QPushButton#actionRcvStatistic:hover,QPushButton#interfaceManageAct:hover,QPushButton#dataReplayAct:hover,
+QPushButton#SendSwitchPageCommandAct:hover,QPushButton#actionSwitchPageView:hover,QPushButton#actionCentralMonitorView:hover,QPushButton#fullScreenAct:hover,QPushButton#fullScreenAct2:hover,
+QPushButton#fullScreenAct3:hover,QPushButton#CommonInfoAct:hover,QPushButton#RightDockShowAct:hover,QPushButton#BottomDockShowAct:hover,QPushButton#pbLog:hover,
+QPushButton#pbBottomPlugin:hover,QPushButton#actionSplitterV:hover,QPushButton#actionSplitterH:hover,QPushButton#actionCancelSplitter:hover,QPushButton#actionReloadPage:hover,
+QPushButton#pbwindowMenu:hover,QPushButton#actionPrint:hover,QPushButton#actionPrintNoTitle:hover,QPushButton#actionSnapshot:hover,QPushButton#actionSnapShotMdi:hover,
+QPushButton#pbAddFavoriteButton:hover,QPushButton#pbFavorite:hover,QPushButton#CImportWarnLabel:hover,QPushButton#OpenHomePage:hover
+{
+    background-image:url(:/imageBlue/ToolBar/background.png);
+}
+
+QDockWidget QFrame#line_4,QDockWidget QFrame#line_10,QDockWidget QFrame#line,QDockWidget QFrame#line_2,QDockWidget QFrame#line_3,QDockWidget QFrame#line_5,QDockWidget QFrame#line_7,QDockWidget QFrame#line_6,QDockWidget QFrame#line_9,QDockWidget QFrame#line_8
+{
+    border-image:url(:/imageBlue/ToolBar/line.png);
+    width:1px;
+}
+
+QPushButton#pbTaskGroup,QPushButton#pbTool,QPushButton#pbView,QPushButton#pbWindow,QPushButton#pbPrint,QPushButton#pbStore,QLabel#toolMeslabel
+{
+    font:57 14px "文泉驿正黑";
+}
+
+QPushButton#myStretchPush
+{
+    border-image:url(:/imageBlue/ToolBar/stretch.png);
+}
+
+QPushButton#myStretchPush:checked
+{
+    border-image:url(:/imageBlue/ToolBar/unstretch.png);
+}
+
+QDialog[modal=true] QPushButton#Search
+{
+    border-image:url(:/imageBlue/Common/search.png);
+}
+
+/* Status Window */
+QPushButton#pbYeMian,QPushButton#pbSearch,
+QPushButton#pbFileSearch,QPushButton#pbWenBen,QPushButton#pbCustom
+{
+    border:0px solid #d4f1ff;
+    background-color:transparent;
+    border-image:none;
+}
+
+QPushButton#pbYeMian:hover,QPushButton#pbSearch:hover,
+QPushButton#pbFileSearch:hover,QPushButton#pbWenBen:hover,QPushButton#pbCustom:hover
+{
+   background-image:url(:/imageBlue/StatusBar/select.png);
+   border-image:none;
+}
+
+QDockWidget QFrame#SLine1,QDockWidget QFrame#SLine2,QDockWidget QFrame#SLine3,QDockWidget QFrame#SLine4
+{
+    border-image:url(:/imageBlue/StatusBar/line.png);
+}
+
+QMainWindow QWidget#statusBar
+{
+    border-top:2px solid #00536e;
+}
+
+QMainWindow QStatusBar::item
+{
+    border:none;
+    background-color:transparent;
+}
+
+QMainWindow QStatusBar QLabel
+{
+    border:none;
+    color:#d4f1ff;
+}
+
+QMainWindow QStatusBar QFrame#SLine1,QMainWindow QStatusBar QFrame#SLine2,QMainWindow QStatusBar QFrame#SLine3,QMainWindow QStatusBar QFrame#SLine4
+{
+    border-image:url(:/imageBlue/StatusBar/line.png);
+}
+
+QStatusBar QWidget#StatusControlWnd
+{
+border:none;
+color:#d4f1ff;
+}
+
+/* Warn Window */
+QLabel#gWarnLabel
+{
+    border-image:url(:/imageBlue/Warn/warn.png);
+}
+
+QLabel#gWarnMsgLabel
+{
+    border-image:url(:/imageBlue/Warn/background.png);
+    color:#e6535f;
+}
+
+
+/* Dock Window */
+QDockWidget
+{
+    border:2px solid;
+}
+
+QDockWidget QToolBox,QWidget#ProjectManager
+{
+    background-color:transparent;
+}
+
+QDockWidget QToolBox::tab
+{
+    background-color:#305485;
+}
+
+QWidget#CDockWidgetTitleBar
+{
+    border-image:url(/imageBlue/DockWidget/top.png);
+}
+
+QDockWidget QTreeView
+{
+    background-color:#122035;
+}
+
+QWidget#DockContenWnd
+{
+    background-color:transparent;
+}
+
+
+QDockWidget QTabWidget
+{
+background-color:#002945;
+
+}
+
+QPushButton#pbDockHover
+{
+    background-color:transparent;
+}
+
+QPushButton#pbDockClose
+{
+    background-color:transparent;
+}
+
+QPushButton#pbDockHover:pressed
+{
+    background-color:#173554;
+    border:none;
+}
+
+QPushButton#pbDockHover:hover
+{
+    background-color:#173554;
+    border:none;
+}
+
+QPushButton#pbDockClose:pressed
+{
+    background-color:#173554;
+    border:none;
+}
+
+QPushButton#pbDockClose:hover
+{
+    background-color:#173554;
+    border:none;
+}
+
+QDockWidget QToolButton#ImportPageButton
+{
+        border-image:url(:/imageBlue/DockWidget/zdy-dr.png);
+}
+
+QDockWidget QToolButton#ImportPageButton:hover
+{
+        border-image:url(:/imageBlue/DockWidget/zdy-drhover.png);
+}
+
+QDockWidget QToolButton#addGroupButton
+{
+        border-image:url(:/imageBlue/DockWidget/zdy-fz.png);
+}
+
+QDockWidget QToolButton#addGroupButton:hover
+{
+        border-image:url(:/imageBlue/DockWidget/zdy-fzhover.png);
+}
+
+QDockWidget QToolButton#moveItemButton
+{
+        border-image:url(:/imageBlue/DockWidget/zdy-ydfz.png);
+}
+
+QDockWidget QToolButton#moveItemButton:hover
+{
+        border-image:url(:/imageBlue/DockWidget/zdy-ydfzhover.png);
+}
+
+QDockWidget QToolButton#deleteItemButton
+{
+        border-image:url(:/imageBlue/DockWidget/zdy-sc.png);
+}
+
+QDockWidget QToolButton#deleteItemButton:hover
+{
+        border-image:url(:/imageBlue/DockWidget/zdy-schover.png);
+}
+
+QDockWidget QToolButton#addFavoriteButton
+{
+        border-image:url(:/imageBlue/DockWidget/sc-sc.png);
+}
+
+QDockWidget QToolButton#addFavoriteButton:hover
+{
+        border-image:url(:/imageBlue/DockWidget/sc-schover.png);
+}
+
+QDockWidget QToolButton#deleteButton
+{
+        border-image:url(:/imageBlue/DockWidget/zdy-sc.png);
+}
+
+QDockWidget QToolButton#deleteButton:hover
+{
+        border-image:url(:/imageBlue/DockWidget/zdy-schover.png);
+}
+
+
+QDockWidget QToolButton#manageFavoriteButton:hover
+{
+        border-image:url(:/imageBlue/DockWidget/sc-glhover.png);
+}
+
+QDockWidget QToolButton#manageFavoriteButton
+{
+        border-image:url(:/imageBlue/DockWidget/sc-gl.png);
+}
+
+
+QDockWidget QFrame[frameShape="5"]
+{
+   border-image:url(:/imageBlue/StatusBar/line.png);
+}
+
+
+QDockWidget QFrame[frameShape="4"]
+{
+   border-image:url(:/imageBlue/Common/hline.png);
+}
+
+QDockWidget QLabel#lbSystemTimeLabel
+{
+    color:#d4f1ff;
+}
+
+
+/* Common Window */
+
+
+QMenu
+{
+    border:1px solid #00536e;
+    background-color:#001f33;
+    border-radius:5px;
+        color:#d4f1ff;
+}
+
+QDockWidget QMenu::item
+{
+    height:30px;
+    background-color:transparent;
+    padding:0px 20px;
+    margin:0px 10px;
+}
+
+QDockWidget QMenu::item:selected
+{
+    border-image: url(:/imageBlue/Login/ComBox-Select.png);
+margin:0px 5px;
+}
+
+QDockWidget QMenu::separator
+{
+    height:1px;
+    border-image:url(:/imageBlue/Title/menuline.png);
+}
+
+QDockWidget QMenu::right-arrow
+{
+    width:4px;
+    height:8px;
+    margin:0px 0px 0px 30px;
+    border-image:url(:/imageBlue/Title/menuarrow.png);
+}
+
+QDockWidget QMenu::indicator:checked
+{
+    border-image:url(:/imageBlue/Title/menucheck.png);
+}
+
+QDockWidget QMenu::indicator:unchecked
+{
+    border-image:url(:/imageBlue/Title/menuuncheck.png);
+}
+
+QDockWidget QHeaderView
+{
+    color:#d4f1ff;
+    background-color:#0f456a;
+    height:32px;
+}
+
+QDockWidget QHeaderView::section
+{
+    background-color:#0f456a;
+
+}
+
+QDockWidget QTreeView
+{
+    alternate-background-color:#063454;
+    background-color:#002945;
+    show-decoration-selected:0;
+    font:57 14px "文泉驿正黑";
+    border:1px solid #20617c;
+    outline:none;
+}
+
+QDockWidget QTreeView::item
+{
+    height:32px;
+     border:none;
+     background-color:transparent;
+      margin:0px 0px 0px 0px;
+     background-clip:margin;
+
+}
+
+QDockWidget QTreeView::item:selected
+{
+    height:32px;
+   /* image:url(:/imageBlue/Common/itemselect2.png);*/
+    background-color:rgb(48,141,198);
+    color:#d4f1ff;
+}
+
+/*
+QDockWidget QTreeView::branch
+{
+    background-color:#002945;
+}
+
+QDockWidget QTreeView::branch:has-siblings:!adjoins-item
+{
+    background-color:transparent;
+}
+
+
+QDockWidget QTreeView::branch:hover
+{
+     background-color:#002945;
+}
+
+QDockWidget QTreeView::branch:selected
+{
+     background-color:#002945;
+}
+*/
+
+QDockWidget QTreeView::branch:has-children:!has-siblings:closed,
+QDockWidget QTreeView::branch:closed:has-children:has-siblings
+{
+    image:url(:/imageBlue/Common/unfold.png);
+    background-color:#002945;
+
+}
+QDockWidget QTreeView::branch:has-children:!has-siblings:open,
+QDockWidget QTreeView::branch:open:has-children:has-siblings
+{
+    image:url(:/imageBlue/Common/fold.png);
+    background-color:#002945;
+}
+
+QDockWidget QTreeView::indicator:selected
+{
+    background-color:#002945;
+}
+
+
+
+QDockWidget QTableWidget
+{
+    alternate-background-color:#063454;
+    background-color:#002945;
+    show-decoration-selected:1;
+    font:57 14px "文泉驿正黑";
+    /*border:1px solid #20617c;*/
+}
+
+QDockWidget QTableWidget::item
+{
+    height:32px;
+}
+
+QDockWidget QTableView
+{
+    alternate-background-color:#063454;
+    background-color:#002945;
+    show-decoration-selected:1;
+    font:57 14px "文泉驿正黑";
+    /*border:1px solid #20617c;*/
+    gridline-color:#00506a;
+}
+
+QDockWidget QTableView QTableCornerButton::section
+{
+        background-color:#002945;
+}
+
+QDockWidget QTableView::item
+{
+    height:32px;
+}
+
+
+QDockWidget QListWidget
+{
+    background-color:#002945;
+}
+
+QDockWidget QListWidget[MsgNotifyWidget=true]
+{
+    background-color:#002945;
+    color:rgb(10,10,10);
+}
+
+QDockWidget QListWidget[MsgNotifyWidget=true]:item
+{
+    color:rgb(10,10,10);
+    height:30px;
+}
+
+QDockWidget QComboBox
+{
+    background-color:#001f33;
+    combobox-popup:0;
+    border:2px solid #00536e;
+    border-radius:2px;
+}
+
+QDockWidget QComboBox::down-arrow
+{
+   image: url(:/imageBlue/Common/combobox.png);
+   border:0px solid #d4f1ff;
+   background-color:transparent;
+   margin:0px -5px 0px 0px;
+}
+
+QDockWidget QComboBox::drop-down
+{
+   border:0px solid #d4f1ff;
+   background-color:transparent;
+   margin:0px 10px 0px 0px;
+}
+
+QDockWidget QComboBox QAbstractItemView
+{
+    border:1px solid #00536e;
+    background-color:#001f33;
+    border-radius:5px;
+    outline:none;
+}
+
+QDockWidget QComboBox QAbstractItemView::item
+{
+    height:32px;
+    background-color:transparent;
+}
+
+QDockWidget QComboBox QAbstractItemView::item:hover
+{
+    color:#d4f1ff;
+    background-color: #003f59;
+    border:none;
+}
+
+QDockWidget QComboBox QAbstractItemView::item:selected
+{
+    color:#d4f1ff;
+    background-color: #003f59;
+}
+
+
+QDockWidget QPushButton
+{
+    border-image: url(:/imageBlue/Common/pushbutton.png);
+}
+QDockWidget QPushButton:pressed
+{
+    border-image: url(:/imageBlue/Common/pushbuttonpressed.png);
+}
+QDockWidget QPushButton:hover
+{
+    border-image: url(:/imageBlue/Common/pushbuttonhover.png);
+}
+
+QDockWidget QLineEdit
+{
+    background-color:#001f33;
+    border:1px solid #00506a;
+    height:30px;
+    border-radius:2px;
+}
+
+/*水平*/
+QDockWidget    QScrollBar::horizontal
+{
+    background-color:#1e2844;
+    border:1px solid #00506a;
+    margin:0px,0px,0px,0px;
+    padding-left:12px;
+    padding-right:12px;
+}
+
+QDockWidget    QScrollBar::handle:horizontal
+{
+    background-color:#305485;
+    height:8px;
+    border-radius:4px;
+    min-width:40px;
+}
+
+QDockWidget    QScrollBar::add-line:horizontal
+{
+    width:12px;
+    height:24px;
+    background-color:#20617c;
+    subcontrol-position:right;
+}
+
+QDockWidget    QScrollBar::sub-line:horizontal
+{
+    width:12px;
+    height:24px;
+    background-color:#20617c;
+    subcontrol-position:left;
+}
+
+QDockWidget    QScrollBar::add-page:horizontal,QDockWidget    QScrollBar::sub-page:horizontal
+{
+    height:24px;
+    background-color:#002945;
+}
+
+/*垂直*/
+QDockWidget    QScrollBar::vertical
+{
+    background-color:#1e2844;
+    border:1px solid #00506a;
+    margin:0px,0px,0px,0px;
+    padding-top:12px;
+    padding-bottom:12px;
+}
+
+QDockWidget    QScrollBar::handle:vertical
+{
+    background-color:#305485;
+    width:8px;
+    border-radius:4px;
+    min-height:40px;
+}
+
+QDockWidget    QScrollBar::add-line:vertical
+{
+    height:12px;
+    width:24px;
+    background-color:#20617c;
+    subcontrol-position:bottom;
+}
+
+QDockWidget    QScrollBar::sub-line:vertical
+{
+    height:12px;
+    width:24px;
+    background-color:#20617c;
+    subcontrol-position:top;
+}
+
+QDockWidget    QScrollBar::add-page:vertical,QDockWidget    QScrollBar::sub-page:vertical
+{
+    width:24px;
+    background-color:#002945;
+}
+
+QDockWidget    QTreeView QScrollBar::vertical
+{
+    background-color:#1e2844;
+    border:1px solid #00506a;
+    margin:32px,0px,-12px,0px;
+    padding-top:12px;
+    padding-bottom:12px;
+}
+
+QDockWidget    QTreeView QScrollBar::handle:vertical
+{
+    background-color:#305485;
+    width:8px;
+    border-radius:4px;
+    min-height:40px;
+}
+
+QDockWidget    QTreeView QScrollBar::add-line:vertical
+{
+    height:12px;
+    width:24px;
+    background-color:#20617c;
+    subcontrol-position:bottom;
+}
+
+QDockWidget    QTreeView QScrollBar::sub-line:vertical
+{
+    height:12px;
+    width:24px;
+    background-color:#20617c;
+    subcontrol-position:top;
+}
+
+QDockWidget QCheckBox
+{
+     color:#d4f1ff;
+    font:57 16px "文泉驿正黑";
+outline:none;
+}
+
+QDockWidget QCheckBox:disabled
+{
+    color:rgb(80,80,80);
+    font:57 16px "文泉驿正黑";
+outline:none;
+}
+
+QDockWidget QCheckBox::indicator:unchecked
+{
+        border-image: url(:/imageBlue/Common/cbunchecked.png);
+}
+
+QDockWidget QCheckBox::indicator:unchecked:hover
+{
+        border-image: url(:/imageBlue/Common/cbhover.png);
+}
+
+QDockWidget QCheckBox::indicator:checked
+{
+        border-image: url(:/imageBlue/Common/cbchecked.png);
+}
+
+
+QPushButton#SearchPB
+{
+    border-image:url(:/imageBlue/Common/search.png);
+}
+
+

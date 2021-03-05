@@ -1,0 +1,22 @@
+//主题色
+$primary-bg-color: rgba(0, 41, 69);
+$primary-border-color: rgb(0, 83, 110);
+$primary-font-color: rgb(212, 241, 255);
+$color-secondary: #99b1be;
+$primary-pop-bg: rgb(0, 49, 82);
+$padding-large: 10px 15px;
+$padding-normal: 4px 6px;
+$padding-small: 2px 4px;
+
+@mixin large-padding() {
+  padding: $padding-large;
+  box-sizing: border-box;
+}
+@mixin normal-padding() {
+  padding: $padding-normal;
+  box-sizing: border-box;
+}
+@mixin small-padding() {
+  padding: $padding-small;
+  box-sizing: border-box;
+}

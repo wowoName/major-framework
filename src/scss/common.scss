@@ -1,0 +1,37 @@
+@import './theme.scss';
+@import '//at.alicdn.com/t/font_2398043_rz21qvmkuw.css';
+body,
+html,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  overflow: hidden;
+  user-select: none;
+  // background-color: #383d41;
+}
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+/*外层轨道。可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果*/
+::-webkit-scrollbar-track {
+  width: 6px;
+  background-color: #d4f1ff;
+  border-radius: 2em;
+}
+
+/*滚动条的设置*/
+::-webkit-scrollbar-thumb {
+  background-color: #305485;
+  background-clip: padding-box;
+  min-height: 28px;
+  border-radius: 2em;
+}
+
+/*滚动条移上去的背景*/
+::-webkit-scrollbar-thumb:hover {
+  background-color: #305485;
+}

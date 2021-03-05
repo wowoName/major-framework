@@ -1,0 +1,777 @@
+/*QDialog 该处影响全局样式切换 */
+/*QDialog 该处影响全局样式切换 */
+/*QDialog 该处影响全局样式切换 */
+/*QDialog 该处影响全局样式切换 */
+/*QDialog 该处影响全局样式切换 */
+/*QDialog 该处影响全局样式切换 */
+/*QDialog 该处影响全局样式切换 */
+/*QDialog 该处影响全局样式切换 */
+
+QDialog
+{
+    background-color:#f0f0f0;
+    color:#222222;
+    border:2px solid #dcdbdc;
+border-radius:3px;
+}
+
+
+
+ QTabBar[shape="4"], QTabBar[shape="0"], QTabBar[shape="1"], QTabBar[shape="5"]
+{
+   font:57 16px "文泉驿正黑";
+}
+
+
+  QTabBar[shape="4"]::tab:selected,  QTabBar[shape="0"]::tab:selected,  QTabBar[shape="1"]::tab:selected,  QTabBar[shape="5"]::tab:selected
+{
+   color:#222222;
+   background-color:#ffffff;
+   height:25px;
+   font:57 16px "文泉驿正黑";
+   border:1px solid #ccd4db;
+padding:3px 5px;
+outline:none;
+}
+
+ QTabBar[shape="4"]::tab, QTabBar[shape="0"]::tab, QTabBar[shape="1"]::tab, QTabBar[shape="5"]::tab
+{
+outline:none;
+}
+
+ QTabBar[shape="4"]::tab:!selected, QTabBar[shape="0"]::tab:!selected, QTabBar[shape="1"]::tab:!selected, QTabBar[shape="5"]::tab:!selected
+{
+    background-color:#dfe7f0;
+    color:#222222;
+    font:57 16px "文泉驿正黑";
+    height:25px;
+   border:1px solid #ccd4db;
+padding:3px 5px;
+outline:none;
+}
+
+
+
+ QTabBar[shape="2"], QTabBar[shape="3"], QTabBar[shape="6"], QTabBar[shape="7"]
+{
+   font:57 16px "文泉驿正黑";
+}
+
+
+  QTabBar[shape="2"]::tab:selected,  QTabBar[shape="3"]::tab:selected,  QTabBar[shape="6"]::tab:selected,  QTabBar[shape="7"]::tab:selected
+{
+   color:#222222;
+   background-color:#ffffff;
+   width:25px;
+   font:57 16px "文泉驿正黑";
+   border:1px solid #ccd4db;
+padding:5px 3px;
+outline:none;
+}
+
+
+ QTabBar[shape="2"]::tab:!selected, QTabBar[shape="3"]::tab:!selected, QTabBar[shape="6"]::tab:!selected, QTabBar[shape="7"]::tab:!selected
+{
+    background-color:#dfe7f0;
+    color:#222222;
+    font:57 16px "文泉驿正黑";
+    width:25px;
+   border:1px solid #ccd4db;
+padding:5px 3px;
+outline:none;
+}
+
+
+   QHeaderView
+{
+    background-color:#e3e3e3;
+    height:32px;
+    color:#222222;
+}
+
+   QHeaderView::section
+{
+    background-color:#dcdbdc;
+    height:32px;
+}
+
+ QPushButton:disabled
+{
+        background-color:qlineargradient(spread:pad,x1:0,x2:0,y1:0,y2:1,stop:0 #adadad,stop:1 #e3e3e3);
+        border:2px solid #dcdbdc;
+        border-radius:3px;
+          color:rgb(10,10,10);
+}
+
+ QPushButton
+{
+        background-color:qlineargradient(spread:pad,x1:0,x2:0,y1:0,y2:1,stop:0 #adadad,stop:1 #e3e3e3);
+        border:2px solid #dcdbdc;
+        border-radius:3px;
+        outline:none;
+}
+
+ QPushButton:hover
+{
+        background-color:qlineargradient(spread:pad,x1:0,x2:0,y1:0,y2:1,stop:0 #adadad,stop:1 #e3e3e3);
+        border:2px solid #dcdbdc;
+        border-radius:3px;
+}
+
+ QPushButton:pressed
+{
+        background-color:qlineargradient(spread:pad,x1:0,x2:0,y1:0,y2:1,stop:0 #adadad,stop:1 #e3e3e3);
+        border:2px solid #dcdbdc;
+        border-radius:3px;
+}
+
+ QToolButton
+{
+        background-color:qlineargradient(spread:pad,x1:0,x2:0,y1:0,y2:1,stop:0 #adadad,stop:1 #e3e3e3);
+        border:2px solid #dcdbdc;
+        border-radius:3px;
+	  color:#d4f1ff;
+}
+
+ QToolButton:disabled
+{
+        background-color:qlineargradient(spread:pad,x1:0,x2:0,y1:0,y2:1,stop:0 #adadad,stop:1 #e3e3e3);
+        border:2px solid #dcdbdc;
+        border-radius:3px;
+          color:rgb(10,10,10);
+}
+
+
+ QTabWidget::pane
+{
+        background-color:#ffffff;
+        border:2px solid #cccccc;
+}
+
+
+
+ QComboBox
+{
+    background-color:#fcfcfc;
+    combobox-popup:0;
+    border:2px solid #cccccc;
+    border-radius:2px;
+        color:#222222;
+}
+ QComboBox::down-arrow
+{
+   image: url(:/imageBlack/Common/combobox.png);
+   border:0px solid #222222;
+   background-color:#e3e3e3;
+   margin:0px -10px 0px 0px;
+}
+
+
+ QComboBox::drop-down
+{
+   border:0px solid #222222;
+   background-color:transparent;
+   margin:0px 10px 0px 0px;
+}
+
+ QComboBox QAbstractItemView
+{
+    border:1px solid #cccccc;
+    background-color:#fcfcfc;
+    border-radius:5px;
+        color:#222222;
+}
+
+ QComboBox QAbstractItemView::item
+{
+    height:32px;
+    background-color:transparent;
+        color:#222222;
+}
+
+ QComboBox QAbstractItemView::item:hover
+{
+    color:#22222;
+    background-color: #999999;
+}
+
+ QComboBox QAbstractItemView::item:selected
+{
+    color:#d4f1ff;
+    background-color: #999999;
+}
+
+ QLineEdit, QTextEdit
+{
+    background-color:#ffffff;
+    border:1px solid #cccccc;
+    border-radius:2px;
+    color:#222222;
+}
+
+ QToolBar
+{
+    background-color:#f0f0f0;
+    border:1px solid #dcdbdc;
+    border-radius:2px;
+    color:#222222;
+}
+
+
+ QTableWidget
+{
+    alternate-background-color:#e3e3e3;
+    background-color:#f0f0f0;
+    show-decoration-selected:1;
+    font:57 14px "文泉驿正黑";
+    border:1px solid #dcdbdc;
+    gridline-color:#fcfcfc;
+    color:#222222;
+}
+
+
+ QTableWidget::item
+{
+    height:32px;
+}
+
+
+QTableView::indicator:enabled:unchecked
+{
+ 	border-image: url(:/imageBlack/Common/cbunchecked.png);
+}
+
+QTableView::indicator:enabled:unchecked:hover
+{
+ 	border-image: url(:/imageBlack/Common/cbhover.png);
+}
+
+QTableView::indicator:enabled:checked
+{
+ 	border-image: url(:/imageBlack/Common/cbchecked.png);
+}
+
+ QTableView
+{
+    alternate-background-color:#e3e3e3;
+    background-color:#f0f0f0;
+    show-decoration-selected:1;
+    font:57 14px "文泉驿正黑";
+    border:1px solid #dcdbdc;
+    gridline-color:#fcfcfc;
+}
+
+ QTableView QTableCornerButton::section
+{
+        background-color:#f0f0f0;
+}
+
+ QTableView::item
+{
+    height:32px;
+}
+
+
+ QFrame[frameShape="5"]
+{
+   border-image:url(:/imageBlack/StatusBar/line.png);
+}
+
+
+ QFrame[frameShape="4"]
+{
+   border-image:url(:/imageBlack/Common/hline.png);
+}
+
+ QListWidget
+{
+    alternate-background-color:#e3e3e3;
+    background-color:#f0f0f0;
+    border:2px solid #dcdbdc;
+    font:57 14px "文泉驿正黑";
+    show-decoration-selected:1;
+}
+
+
+/*垂直*/
+     QScrollBar::vertical
+{
+    background-color:#dbd9dc;
+    border:1px solid #dbd9dc;
+    margin:0px,0px,0px,0px;
+    padding-top:12px;
+    padding-bottom:12px;
+}
+
+     QScrollBar::handle:vertical
+{
+    background-color:#bcbbbc;
+    width:8px;
+    border-radius:4px;
+    min-height:40px;
+}
+
+     QScrollBar::add-line:vertical
+{
+    height:12px;
+    width:24px;
+    background-color:#bcbbbc;
+    subcontrol-position:bottom;
+}
+
+     QScrollBar::sub-line:vertical
+{
+    height:12px;
+    width:24px;
+    background-color:#bcbbbc;
+    subcontrol-position:top;
+}
+
+     QScrollBar::add-page:vertical,    QScrollBar::sub-page:vertical
+{
+    width:24px;
+    background-color:#dbd9dc;
+}
+
+
+
+ QGroupBox
+{
+color:#222222;
+font:57 16px "文泉驿正黑";
+background-color:transparent;
+border:2px solid #dcdbdc;
+border-radius:5px;
+margin-top:8px;
+}
+
+ QGroupBox::title
+{
+color:#222222;
+font:57 14px "文泉驿正黑";
+subcontrol-origin:margin;
+bottom:-1px;
+left:10px;
+}
+
+ QGroupBox::indicator:unchecked
+{     
+        border-image: url(:/imageBlack/Common/cbunchecked.png);
+}
+
+ QGroupBox::indicator:unchecked:hover
+{     
+        border-image: url(:/imageBlack/Common/cbhover.png);
+}
+
+ QGroupBox::indicator:checked
+{     
+        border-image: url(:/imageBlack/Common/cbchecked.png);
+}
+
+
+ QMenu
+{
+    border:1px solid #c9c7ca;
+    background-color:#f0f0f0;
+    border-radius:5px;
+    color:#222222;
+}
+
+ QMenu::item
+{
+    height:30px;
+    background-color:transparent;
+    padding:0px 20px;
+    margin:0px 20px;
+    color:#222222;
+}
+
+ QMenu::item:disabled
+{
+    height:30px;
+    background-color:transparent;
+    padding:0px 20px;
+    margin:0px 20px;
+    color:rgb(10,10,10);
+}
+
+
+ QMenu::item:selected
+{
+    background-color:#add4f9;
+}
+
+ QMenu::separator
+{
+    height:1px;
+    border-image:url(:/imageBlack/Title/menuline.png);
+}
+
+ QMenu::right-arrow
+{
+    width:4px;
+    height:8px;
+    margin:0px 0px 0px 30px;
+    border-image:url(:/imageBlack/Title/menuarrow.png);
+}
+
+ QMenu::indicator:checked
+{
+    border-image:url(:/imageBlack/Title/menucheck.png);
+}
+
+ QMenu::indicator:unchecked
+{
+    border-image:url(:/imageBlack/Title/menuuncheck.png);
+}
+
+
+
+ QLCDNumber
+{
+        color:#222222;
+        border-color:#dcdbdc;
+}
+
+ QDateTimeEdit
+{
+     background-color:#f0f0f0;
+    border:1px solid #dcdbdc;
+    border-radius:2px;
+    color:#222222;
+}
+
+
+ QwtPlot QwtTextLabel
+{
+        color:#222222;
+}
+
+ QwtPlot QWidget
+{
+        background-color:#f0f0f0;
+        color:#222222;
+}
+
+ QSlider::add-page::Horizontal
+{
+        background-color:#f0f0f0;
+	height:3px;
+	border-radius:3px;
+}
+
+ QSlider::sub-page::Horizontal
+{
+	background-color:qlineargradient(spread:pad,x1:0,x2:1,y1:0,y2:0,stop:0 #76c5d3,stop:1 #34c390);
+	height:3px;
+	border-radius:3px;
+}
+
+/*整个划动条设置*/
+ QSlider::groove:Horizontal
+{
+	height:8px;
+        background:#f0f0f0;
+}
+
+/*拖动设置*/
+ QSlider::handle:Horizontal
+{
+width:16px;
+border:1px solid #dcdbdc;
+border-radius:8px;
+background-color:#f0f0f0;
+margin:-5px 0px;/*设定圆圈*/
+}
+
+ QSlider::sub-page::Vertical
+{
+        background-color:qlineargradient(spread:pad,x1:0,x2:1,y1:0,y2:0,stop:0 #adadad,stop:1 #e3e3e3);
+	width:3px;
+	border-radius:3px;
+}
+
+/*整个划动条设置*/
+ QSlider::groove:Vertical
+{
+	width:8px;
+        background:#f0f0f0;
+}
+
+/*拖动设置*/
+ QSlider::handle:Vertical
+{
+height:16px;
+border:1px solid #dcdbdc;
+border-radius:8px;
+background-color:#f0f0f0;
+margin:0px -5px;/*设定圆圈*/
+}
+
+
+ QProgressBar
+{
+    color:#222222;
+    background-color:#f0f0f0;
+    border-radius:3px;
+    text-align:right;
+    margin-right:32px;
+}
+
+ QProgressBar::chunk
+{
+    margin:0.5px;
+    width:10px;
+    background-color:#f0f0f0;
+    border-radius:1px;
+}
+
+ QRadioButton
+{
+    color:#222222;
+    font:57 16px "文泉驿正黑";
+}
+
+
+ QRadioButton
+{
+	outline:none;
+}
+
+ QRadioButton::indicator
+{
+	width:20px;
+	height:20px;
+}
+
+ QRadioButton::indicator:unchecked
+{
+	width:20px;
+	height:20px;
+        border-image:url(:/imageBlack/Common/rdNoSelect.png);
+}
+
+ QRadioButton::indicator:unchecked:hover
+{
+	width:20px;
+	height:20px;
+        border-image:url(:/imageBlack/Common/rdHover.png);
+}
+
+ QRadioButton::indicator:checked
+{
+	width:20px;
+	height:20px;
+        border-image:url(:/imageBlack/Common/rdSelect.png);
+}
+
+
+
+
+  QCheckBox
+{
+    outline:none;
+}
+
+  QCheckBox:disabled
+{
+    color:rgb(10,10,10);
+    outline:none;
+}
+
+  QCheckBox::indicator:unchecked
+{     
+        border-image: url(:/imageBlack/Common/cbunchecked.png);
+}
+
+  QCheckBox::indicator:unchecked:hover
+{     
+        border-image: url(:/imageBlack/Common/cbhover.png);
+}
+
+  QCheckBox::indicator:checked
+{     
+        border-image: url(:/imageBlack/Common/cbchecked.png);
+}
+
+
+ QTreeView
+{
+    alternate-background-color:#e3e3e3;
+    background-color:#f0f0f0;
+    show-decoration-selected:0;
+    font:57 14px "文泉驿正黑";
+    border:1px solid #cccccc;
+    outline:none;
+    color:#222222;
+    font:57 16px "文泉驿正黑";
+}
+
+ QTreeView::item
+{
+    height:32px;
+     border:none;
+     background-color:transparent;
+      margin:0px 0px 0px 0px;
+     background-clip:margin;
+
+}
+
+ QTreeView::item:selected
+{
+    height:32px;
+    /*image:url(:/imageBlue/Common/itemselect.png);*/
+    border:none;
+    /*background-color:transparent;*/
+    background-color:rgb(0,156,228);
+    color:#222222;
+}
+
+
+ QTreeView::branch
+{
+    background-color:#f0f0f0;
+}
+
+ QTreeView::branch:has-siblings:!adjoins-item
+{
+    background-color:transparent;
+}
+
+
+ QTreeView::branch:hover
+{
+     background-color:rgb(0,156,228);
+}
+
+ QTreeView::branch:selected
+{
+     background-color:transparent;
+}
+
+ QTreeView::branch:has-children:!has-siblings:closed,
+ QTreeView::branch:closed:has-children:has-siblings
+{
+    image:url(:/imageBlack/Common/unfold.png);
+    background-color:transparent;
+
+}
+ QTreeView::branch:has-children:!has-siblings:open,
+ QTreeView::branch:open:has-children:has-siblings
+{
+    image:url(:/imageBlack/Common/fold.png);
+    background-color:transparent;
+}
+
+ QToolBox QWidget
+{
+    background-color:transparent;
+}
+
+ QToolBox#tbPercentage QLabel
+{
+    background-color:transparent;
+    color:#222222;
+}
+
+ QToolBox::tab
+{
+    background-color:#e3e3e3;
+    color:#222222;
+     border-radius:2px;
+}
+
+ QToolBox::tab:selected
+{
+    background-color:#adadad;
+    color:#222222;
+ border-radius:2px;
+}
+
+
+
+QDialog[CTooTip=true]
+{
+    background-color:#f0f0f0;
+    color:#222222;
+    border:2px solid #cccccc;
+border-radius:3px;
+}
+
+
+QDialog[CTooTip=true]  QFrame[frameShape="5"],QDialog[CTooTip=true]  QFrame[frameShape="4"]
+{
+   background-color:#f0f0f0;
+   border:none; 
+border-image:none;
+}
+
+QDialog[CTooTip=true]  QFrame[CenteLine=true]
+{
+   background-color:#f0f0f0;
+   border:none; 
+border-image:none;
+}
+
+QPushButton[PlayButton=true]:disabled
+{
+        border-image: url(:/imageBlack/Common/playBTDiable.png);
+        border:none;
+        background-color:transparent;
+}
+
+QPushButton[PlayButton=true]
+{
+          border-image: url(:/imageBlack/Common/playBT.png);
+        border:none;
+background-color:transparent;
+}
+
+QPushButton[PlayButton=true]:hover
+{
+          border-image: url(:/imageBlack/Common/playBTHover.png);
+        border:none;
+background-color:transparent;
+}
+
+QPushButton[PlayButton=true]:pressed
+{
+          border-image: url(:/imageBlack/Common/playBTPress.png);
+        border:none;
+background-color:transparent;
+}
+
+
+ QSpinBox, QDoubleSpinBox
+{
+     background-color:#f0f0f0;
+    border:1px solid #dcdbdc;
+    border-radius:2px;
+    color:#222222;
+}
+
+ QSpinBox::up-button, QDoubleSpinBox::up-button
+{
+        border-image:url(:/imageBlack/Common/up.png);
+}
+
+ QSpinBox::down-button, QDoubleSpinBox::down-button
+{
+        border-image:url(:/imageBlack/Common/down.png);
+}
+
+QDialog[FsDataEditWidget=true] QLabel
+{
+  font:57 23px "文泉驿正黑";
+}
+
+QDialog[FsDataEditWidget=true] QComboBox
+{
+    font:57 23px "文泉驿正黑";
+}
+
+QDialog[FsDataEditWidget=true] QPushButton
+{
+    font:57 23px "文泉驿正黑";
+}

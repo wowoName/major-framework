@@ -1,0 +1,1112 @@
+/*中心窗口样式文件*/
+
+QFrame#CenteTabMidArea QTabBar[shape="4"],QFrame#CenteTabMidArea QTabBar[shape="0"],QFrame#CenteTabMidArea QTabBar[shape="1"],QFrame#CenteTabMidArea QTabBar[shape="5"]
+{
+   font:57 16px "文泉驿正黑";
+}
+
+
+QFrame#CenteTabMidArea  QTabBar[shape="4"]::tab:selected,QFrame#CenteTabMidArea  QTabBar[shape="0"]::tab:selected,QFrame#CenteTabMidArea  QTabBar[shape="1"]::tab:selected,QFrame#CenteTabMidArea  QTabBar[shape="5"]::tab:selected
+{
+   color:#222222;
+   background-color:#ffffff;
+   height:25px;
+   font:57 16px "文泉驿正黑";
+   border:1px solid #ccd4db;
+padding:3px 5px;
+outline:none;
+}
+
+QFrame#CenteTabMidArea QTabBar[shape="4"]::tab,QFrame#CenteTabMidArea QTabBar[shape="0"]::tab,QFrame#CenteTabMidArea QTabBar[shape="1"]::tab,QFrame#CenteTabMidArea QTabBar[shape="5"]::tab
+{
+outline:none;
+}
+
+QFrame#CenteTabMidArea QTabBar[shape="4"]::tab:!selected,QFrame#CenteTabMidArea QTabBar[shape="0"]::tab:!selected,QFrame#CenteTabMidArea QTabBar[shape="1"]::tab:!selected,QFrame#CenteTabMidArea QTabBar[shape="5"]::tab:!selected
+{
+    background-color:#dfe7f0;
+    color:#222222;
+    font:57 16px "文泉驿正黑";
+    height:25px;
+   border:1px solid #ccd4db;
+padding:3px 5px;
+outline:none;
+}
+
+
+
+QFrame#CenteTabMidArea QTabBar[shape="2"],QFrame#CenteTabMidArea QTabBar[shape="3"],QFrame#CenteTabMidArea QTabBar[shape="6"],QFrame#CenteTabMidArea QTabBar[shape="7"]
+{
+   font:57 16px "文泉驿正黑";
+}
+
+
+QFrame#CenteTabMidArea  QTabBar[shape="2"]::tab:selected,QFrame#CenteTabMidArea  QTabBar[shape="3"]::tab:selected,QFrame#CenteTabMidArea  QTabBar[shape="6"]::tab:selected,QFrame#CenteTabMidArea  QTabBar[shape="7"]::tab:selected
+{
+   color:#222222;
+   background-color:#ffffff;
+   width:25px;
+   font:57 16px "文泉驿正黑";
+   outline:none;
+}
+
+
+QFrame#CenteTabMidArea QTabBar[shape="2"]::tab:!selected,QFrame#CenteTabMidArea QTabBar[shape="3"]::tab:!selected,QFrame#CenteTabMidArea QTabBar[shape="6"]::tab:!selected,QFrame#CenteTabMidArea QTabBar[shape="7"]::tab:!selected
+{
+    background-color:#dfe7f0;
+    color:#222222;
+    font:57 16px "文泉驿正黑";
+    width:25px;
+    outline:none;
+}
+
+
+
+QFrame#CenteTabMidArea QWidget[MidBaseWidget=true],QFrame#CenteTabMidArea QMdiSubWindow[MidBaseWidget=true]
+{
+        background-color:#ffffff;
+        border:0;
+}
+
+QFrame#CenteTabMidArea QPushButton:disabled
+{
+        background-color:qlineargradient(spread:pad,x1:0,x2:0,y1:0,y2:1,stop:0 #adadad,stop:1 #e3e3e3);
+        border:2px solid #dcdbdc;
+        border-radius:3px;
+        color:rgb(10,10,10);
+}
+
+QFrame#CenteTabMidArea QPushButton
+{
+        background-color:qlineargradient(spread:pad,x1:0,x2:0,y1:0,y2:1,stop:0 #adadad,stop:1 #e3e3e3);
+        border:2px solid #dcdbdc;
+        border-radius:3px;
+        outline:none;
+}
+
+QFrame#CenteTabMidArea QPushButton:hover
+{
+        background-color:qlineargradient(spread:pad,x1:0,x2:0,y1:0,y2:1,stop:0 #adadad,stop:1 #e3e3e3);
+        border:2px solid #dcdbdc;
+        border-radius:3px;
+}
+
+QFrame#CenteTabMidArea QPushButton:pressed
+{
+        background-color:qlineargradient(spread:pad,x1:0,x2:0,y1:0,y2:1,stop:0 #adadad,stop:1 #e3e3e3);
+        border:2px solid #dcdbdc;
+        border-radius:3px;
+}
+
+QFrame#CenteTabMidArea QToolButton
+{
+        background-color:qlineargradient(spread:pad,x1:0,x2:0,y1:0,y2:1,stop:0 #adadad,stop:1 #e3e3e3);
+        border:2px solid #dcdbdc;
+        border-radius:3px;
+          color:#222222;
+}
+
+QFrame#CenteTabMidArea QToolButton:disabled
+{
+        background-color:qlineargradient(spread:pad,x1:0,x2:0,y1:0,y2:1,stop:0 #adadad,stop:1 #e3e3e3);
+        border:2px solid #dcdbdc;
+        border-radius:3px;
+          color:rgb(10,10,10);
+}
+
+
+QFrame#CenteTabMidArea QTabWidget::pane
+{
+        background-color:#ffffff;
+        border:2px solid #cccccc;
+}
+
+
+
+QFrame#CenteTabMidArea QComboBox
+{
+    background-color:#fcfcfc;
+    combobox-popup:0;
+    border:2px solid #cccccc;
+    border-radius:2px;
+        color:#222222;
+}
+QFrame#CenteTabMidArea QComboBox::down-arrow
+{
+   image: url(:/imageBlack/Common/combobox.png);
+   border:0px solid #222222;
+   background-color:#transparent;
+   margin:0px -10px 0px 0px;
+}
+
+
+QFrame#CenteTabMidArea QComboBox::drop-down
+{
+   border:0px solid #222222;
+   background-color:transparent;
+   margin:0px 10px 0px 0px;
+}
+
+QFrame#CenteTabMidArea QComboBox QAbstractItemView
+{
+    border:1px solid #cccccc;
+    background-color:#fcfcfc;
+    border-radius:5px;
+        color:#222222;
+}
+
+QFrame#CenteTabMidArea QComboBox QAbstractItemView::item
+{
+    height:32px;
+    background-color:transparent;
+        color:#222222;
+}
+
+QFrame#CenteTabMidArea QComboBox QAbstractItemView::item:hover
+{
+    color:#222222;
+    background-color: #999999;
+}
+
+QFrame#CenteTabMidArea QComboBox QAbstractItemView::item:selected
+{
+    color:#222222;
+    background-color: #999999;
+}
+
+QFrame#CenteTabMidArea QLineEdit,QFrame#CenteTabMidArea QTextEdit
+{
+    background-color:#fcfcfc;
+    border:1px solid #cccccc;
+    border-radius:2px;
+    color:#222222;
+}
+
+QFrame#CenteTabMidArea QToolBar
+{
+    background-color:#f0f0f0;
+    border:1px solid #dcdbdc;
+    border-radius:2px;
+    color:#222222;
+}
+
+QFrame#CenteTabMidArea QHeaderView
+{
+    color:#222222;
+    background-color:#e3e3e3;
+    height:32px;
+}
+
+QFrame#CenteTabMidArea QHeaderView::section
+{
+    background-color:#dcdbdc;
+}
+
+
+QFrame#CenteTabMidArea QTableWidget
+{
+    alternate-background-color:#e3e3e3;
+    background-color:#f0f0f0;
+    show-decoration-selected:1;
+    /*font:57 14px "文泉驿正黑";*/
+    border:1px solid #dcdbdc;
+    gridline-color:#dcdbdc;
+}
+
+
+QFrame#CenteTabMidArea QTableView
+{
+    alternate-background-color:#e3e3e3;
+    background-color:#f0f0f0;
+    show-decoration-selected:1;
+    /*font:57 14px "文泉驿正黑";*/
+    border:1px solid #dcdbdc;
+    gridline-color:#dcdbdc;
+}
+
+QFrame#CenteTabMidArea QTableView QTableCornerButton::section
+{
+        background-color:#dcdbdc;
+}
+
+
+QFrame#CenteTabMidArea QTableView::item
+{
+    min-height:32px;
+}
+
+
+
+
+QFrame#CenteTabMidArea QFrame[frameShape="5"]
+{
+   border-image:url(:/imageBlack/StatusBar/line.png);
+}
+
+
+QFrame#CenteTabMidArea QFrame[frameShape="4"]
+{
+   border-image:url(:/imageBlack/Common/hline.png);
+}
+
+QFrame#CenteTabMidArea QListWidget
+{
+    alternate-background-color:#e3e3e3;
+    background-color:#ffffff;
+    border:2px solid #adadad;
+    font:57 14px "文泉驿正黑";
+    show-decoration-selected:1;
+}
+
+QFrame#CenteTabMidArea QListWidget:item
+{
+   height:26px;
+}
+
+/*水平*/
+QFrame#CenteTabMidArea    QScrollBar::horizontal
+{
+    background-color:#dbd9dc;
+    border:1px solid #dbd9dc;
+    margin:0px,0px,0px,0px;
+    padding-left:12px;
+    padding-right:12px;
+}
+
+QFrame#CenteTabMidArea    QScrollBar::handle:horizontal
+{
+    background-color:#bcbbbc;
+    height:8px;
+    border-radius:4px;
+    min-width:40px;
+}
+
+QFrame#CenteTabMidArea    QScrollBar::add-line:horizontal
+{
+    width:12px;
+    height:24px;
+    background-color:#bcbbbc;
+    subcontrol-position:right;
+}
+
+QFrame#CenteTabMidArea    QScrollBar::sub-line:horizontal
+{
+    width:12px;
+    height:24px;
+    background-color:#bcbbbc;
+    subcontrol-position:left;
+}
+
+QFrame#CenteTabMidArea    QScrollBar::add-page:horizontal,QFrame#CenteTabMidArea    QScrollBar::sub-page:horizontal
+{
+    height:24px;
+    background-color:#dbd9dc;
+}
+
+/*垂直*/
+QFrame#CenteTabMidArea    QScrollBar::vertical
+{
+    background-color:#dbd9dc;
+    border:1px solid #dbd9dc;
+    margin:0px,0px,0px,0px;
+    padding-top:12px;
+    padding-bottom:12px;
+}
+
+QFrame#CenteTabMidArea    QScrollBar::handle:vertical
+{
+    background-color:#bcbbbc;
+    width:8px;
+    border-radius:4px;
+    min-height:40px;
+}
+
+QFrame#CenteTabMidArea    QScrollBar::add-line:vertical
+{
+    height:12px;
+    width:24px;
+    background-color:#bcbbbc;
+    subcontrol-position:bottom;
+    /* border-image:url(:/imageBlue/Common/sdown.png);*/
+}
+
+QFrame#CenteTabMidArea    QScrollBar::sub-line:vertical
+{
+    height:12px;
+    width:24px;
+    background-color:#bcbbbc;
+    subcontrol-position:top;
+    /*border-image:url(:/imageBlue/Common/sup.png);*/
+}
+
+QFrame#CenteTabMidArea    QScrollBar::add-page:vertical,QFrame#CenteTabMidArea    QScrollBar::sub-page:vertical
+{
+    width:24px;
+    background-color:#dbd9dc;
+}
+
+
+QFrame#CenteTabMidArea QGroupBox
+{
+background-color:#f0f0f0;
+border:2px solid #dcdbdc;
+border-radius:5px;
+margin-top:6px;
+}
+
+QFrame#CenteTabMidArea QGroupBox::title
+{
+subcontrol-origin:margin;
+bottom:3px;
+color:#222222;
+left:10px;
+}
+
+QFrame#CenteTabMidArea  QGroupBox::indicator:unchecked
+{
+        border-image: url(:/imageBlack/Common/cbunchecked.png);
+}
+
+QFrame#CenteTabMidArea  QGroupBox::indicator:unchecked:hover
+{
+        border-image: url(:/imageBlack/Common/cbhover.png);
+}
+
+QFrame#CenteTabMidArea  QGroupBox::indicator:checked
+{
+        border-image: url(:/imageBlack/Common/cbchecked.png);
+}
+
+QFrame#CenteTabMidArea QMenu
+{
+    border:1px solid #dcdbdc;
+    background-color:#f0f0f0;
+    border-radius:5px;
+    color:#222222;
+}
+
+QFrame#CenteTabMidArea QMenu::item
+{
+    height:30px;
+    background-color:transparent;
+    padding:0px 20px;
+    margin:0px 10px;
+    color:#222222;
+}
+
+QFrame#CenteTabMidArea QMenu::item:disabled
+{
+    height:30px;
+    background-color:transparent;
+    padding:0px 20px;
+    margin:0px 20px;
+    color:rgb(10,10,10);
+}
+
+
+QFrame#CenteTabMidArea QMenu::item:selected
+{
+    background-color:#add4f9;
+    margin:0px 5px;
+}
+
+QFrame#CenteTabMidArea QMenu::separator
+{
+    height:1px;
+    border-image:url(:/imageBlack/Title/menuline.png);
+}
+
+QFrame#CenteTabMidArea QMenu::right-arrow
+{
+    width:4px;
+    height:8px;
+    margin:0px 0px 0px 30px;
+    border-image:url(:/imageBlack/Title/menuarrow.png);
+}
+
+QFrame#CenteTabMidArea QMenu::indicator:checked
+{
+    border-image:url(:/imageBlack/Title/menucheck.png);
+}
+
+QFrame#CenteTabMidArea QMenu::indicator:unchecked
+{
+    border-image:url(:/imageBlack/Title/menuuncheck.png);
+}
+
+QFrame#CenteTabMidArea QFrame[LjMultiStationTMTable=true]
+{
+          background-color:#f0f0f0;
+}
+
+QFrame#CenteTabMidArea QFrame[LjMultiStationTMTable=true] QLCDNumber
+{
+          color:#222222;
+          border-color:#dcdbdc;
+}
+
+QFrame#CenteTabMidArea QFrame[LjMultiStationTMTable=true] QLabel,QFrame#CenteTabMidArea QFrame[LjMultiStationTMTable=true] QPushButton,QFrame#CenteTabMidArea QFrame[LjMultiStationTMTable=true] QLineEdit,
+QFrame#CenteTabMidArea QFrame[LjMultiStationTMTable=true] QToolButton
+{
+          color:#222222;
+}
+
+QFrame#CenteTabMidArea QFrame[LjMultiStationTMTable=true] QLabel:disabled,QFrame#CenteTabMidArea QFrame[LjMultiStationTMTable=true] QPushButton:disabled,QFrame#CenteTabMidArea QFrame[LjMultiStationTMTable=true] QLineEdit:disabled,QFrame#CenteTabMidArea QFrame[LjMultiStationTMTable=true] QToolButton:disabled
+{
+          color:rgb(10,10,10);
+}
+
+QFrame#CenteTabMidArea QLCDNumber
+{
+        color:#222222;
+        border-color:#dcdbdc;
+}
+
+QFrame#CenteTabMidArea QDateTimeEdit
+{
+    background-color:#f0f0f0;
+    border:1px solid #dcdbdc;
+    border-radius:2px;
+    color:#222222;
+}
+
+QFrame#CenteTabMidArea QSpinBox,QFrame#CenteTabMidArea QDoubleSpinBox
+{
+     background-color:#f0f0f0;
+    border:1px solid #dcdbdc;
+    border-radius:2px;
+    color:#222222;
+}
+
+QFrame#CenteTabMidArea QSpinBox::up-button,QFrame#CenteTabMidArea QDoubleSpinBox::up-button
+{
+        border-image:url(:/imageBlack/Common/up.png);
+}
+
+QFrame#CenteTabMidArea QSpinBox::down-button,QFrame#CenteTabMidArea QDoubleSpinBox::down-button
+{
+        border-image:url(:/imageBlack/Common/down.png);
+}
+
+QFrame#CenteTabMidArea QWidget[FsFTPGetZFF=true] QLabel,QFrame#CenteTabMidArea QWidget[FsFTPGetZFF=true] QPushButton
+{
+        color:#222222;
+}
+
+QFrame#CenteTabMidArea QWidget[FsFTPGetZFF=true] QLabel:disabled,QFrame#CenteTabMidArea QWidget[FsFTPGetZFF=true] QPushButton:disabled
+{
+        color:rgb(10,10,10);
+}
+
+QFrame#CenteTabMidArea QWidget[LjFilePicker=true] QLabel
+{
+        color:#222222;
+}
+
+QFrame#CenteTabMidArea QWidget[LjPlot=true] QwtTextLabel
+{
+        color:#222222;
+}
+
+QFrame#CenteTabMidArea QFrame[LjPlot=true] QWidget
+{
+        background-color:#f0f0f0;
+        color:#222222;
+}
+
+QFrame#CenteTabMidArea QWidget[ReplayCtl=true] QLabel
+{
+        color:#222222;
+}
+
+QFrame#CenteTabMidArea QWidget[FsMultiPlanXmlWidget=true] QLabel
+{
+        color:#222222;
+}
+
+QFrame#CenteTabMidArea QwtPlot QwtTextLabel
+{
+        color:#222222;
+}
+
+QFrame#CenteTabMidArea QwtPlot QWidget
+{
+        background-color:#f0f0f0;
+        color:#222222;
+}
+
+QFrame#CenteTabMidArea QSlider::add-page::Horizontal
+{
+        background-color:#f0f0f0;
+        height:3px;
+        border-radius:3px;
+border-image:url(:/imageBlue/Common/slider-back.png);
+}
+
+QFrame#CenteTabMidArea QSlider::sub-page::Horizontal
+{
+        background-color:qlineargradient(spread:pad,x1:0,x2:1,y1:0,y2:0,stop:0 #adadad,stop:1 #e3e3e3);
+        height:3px;
+        border-radius:3px;
+}
+
+/*整个划动条设置*/
+QFrame#CenteTabMidArea QSlider::groove:Horizontal
+{
+        height:10px;
+        background:#f0f0f0;
+}
+
+/*拖动设置*/
+QFrame#CenteTabMidArea QSlider::handle:Horizontal
+{
+width:16px;
+height:16px;
+margin:-3px 0px;/*设定圆圈*/
+border-image:url(:/imageBlue/Common/slider.png);
+background-color:transparent;
+}
+
+QFrame#CenteTabMidArea QSlider::sub-page::Vertical
+{
+        background-color:qlineargradient(spread:pad,x1:0,x2:1,y1:0,y2:0,stop:0 #adadad,stop:1 #e3e3e3);
+        width:3px;
+        border-radius:3px;
+}
+
+/*整个划动条设置*/
+QFrame#CenteTabMidArea QSlider::groove:Vertical
+{
+        width:8px;
+        background:#f0f0f0;
+}
+
+/*拖动设置*/
+QFrame#CenteTabMidArea QSlider::handle:Vertical
+{
+height:16px;
+border:1px solid #dcdbdc;
+border-radius:8px;
+background-color:#f0f0f0;
+margin:0px -5px;/*设定圆圈*/
+}
+
+
+QFrame#CenteTabMidArea QProgressBar
+{
+    color:#222222;
+    background-color:#f0f0f0;
+    border-radius:3px;
+    text-align:right;
+    margin-right:32px;
+}
+
+QFrame#CenteTabMidArea QProgressBar::chunk
+{
+    margin:0.5px;
+    width:10px;
+    background-color:#f0f0f0;
+    border-radius:1px;
+}
+
+QFrame#CenteTabMidArea QRadioButton
+{
+    color:#222222;
+    font:57 16px "文泉驿正黑";
+}
+
+QFrame#CenteTabMidArea QScrollArea[PageView=true],QFrame#CenteTabMidArea QWidget#Form
+{
+    background-color:#f0f0f0;
+}
+
+QFrame#CenteTabMidArea QRadioButton
+{
+        outline:none;
+}
+
+QFrame#CenteTabMidArea QRadioButton::indicator
+{
+        width:20px;
+        height:20px;
+}
+
+QFrame#CenteTabMidArea QRadioButton::indicator:unchecked
+{
+        width:20px;
+        height:20px;
+        border-image:url(:/imageBlack/Common/rdNoSelect.png);
+}
+
+QFrame#CenteTabMidArea QRadioButton::indicator:unchecked:hover
+{
+        width:20px;
+        height:20px;
+        border-image:url(:/imageBlack/Common/rdHover.png);
+}
+
+QFrame#CenteTabMidArea QRadioButton::indicator:checked
+{
+        width:20px;
+        height:20px;
+        border-image:url(:/imageBlack/Common/rdSelect.png);
+}
+
+QFrame#CenteTabMidArea QFrame#BlackGroundFrame
+{
+        border:none;
+        background-color:#f0f0f0;
+}
+
+QFrame#CenteTabMidArea QGroupBox#zjFXMLGroupBox,QFrame#CenteTabMidArea QGroupBox#zjFXMLGroupBox_2
+{
+        background-color:transparent;
+        border:none;
+}
+
+QFrame#CenteTabMidArea QToolBox#tbPercentage QGroupBox
+{
+        background-color:transparent;
+        border:none;
+}
+
+QFrame#CenteTabMidArea QFrame[wGroupSimpleWnd=true]
+{
+        background-color:#f0f0f0;
+        border:1px solid #dcdbdc;
+        border-radius:3px;
+}
+
+QFrame#CenteTabMidArea QScrollArea#computeGroupscrollArea,QFrame#CenteTabMidArea QScrollArea#planMonitorscrollArea
+{
+        border:none;
+        background-color:transparent;
+}
+
+QFrame#CenteTabMidArea  QCheckBox
+{
+    outline:none;
+}
+
+QFrame#CenteTabMidArea  QCheckBox:disabled
+{
+    color:rgb(10,10,10);
+    outline:none;
+}
+
+QFrame#CenteTabMidArea  QCheckBox::indicator:unchecked
+{
+        border-image: url(:/imageBlack/Common/cbunchecked.png);
+}
+
+QFrame#CenteTabMidArea  QCheckBox::indicator:unchecked:hover
+{
+        border-image: url(:/imageBlack/Common/cbhover.png);
+}
+
+QFrame#CenteTabMidArea  QCheckBox::indicator:checked
+{
+        border-image: url(:/imageBlack/Common/cbchecked.png);
+}
+
+
+QFrame#CenteTabMidArea QTreeView
+{
+    alternate-background-color:#e3e3e3;
+    background-color:#ffffff;
+    show-decoration-selected:0;
+    font:57 14px "文泉驿正黑";
+    border:1px solid #dcdbdc;
+    outline:none;
+    color:#222222;
+}
+
+QFrame#CenteTabMidArea QTreeView::item
+{
+    height:32px;
+     border:none;
+     background-color:transparent;
+      margin:0px 0px 0px 0px;
+     background-clip:margin;
+
+}
+
+QFrame#CenteTabMidArea QTreeView::item:selected
+{
+    height:32px;
+   /* image:url(:/imageBlue/Common/itemselect2.png);*/
+    background-color:rgb(173,173,173);
+    color:#222222;
+}
+
+
+QFrame#CenteTabMidArea QTreeView::branch
+{
+    background-color:#f0f0f0;
+}
+
+QFrame#CenteTabMidArea QTreeView::branch:has-siblings:!adjoins-item
+{
+    background-color:transparent;
+}
+
+
+QFrame#CenteTabMidArea QTreeView::branch:hover
+{
+     background-color:#e3e3e3;
+}
+
+QFrame#CenteTabMidArea QTreeView::branch:selected
+{
+     background-color:#adadad;
+}
+
+QFrame#CenteTabMidArea QTreeView::branch:has-children:!has-siblings:closed,
+QFrame#CenteTabMidArea QTreeView::branch:closed:has-children:has-siblings
+{
+    image:url(:/imageBlack/Common/unfold.png);
+    background-color:#f0f0f0;
+
+}
+QFrame#CenteTabMidArea QTreeView::branch:has-children:!has-siblings:open,
+QFrame#CenteTabMidArea QTreeView::branch:open:has-children:has-siblings
+{
+    image:url(:/imageBlack/Common/fold.png);
+    background-color:#f0f0f0;
+}
+
+QFrame#CenteTabMidArea QToolBox QWidget
+{
+    background-color:transparent;
+}
+
+QFrame#CenteTabMidArea QToolBox#tbPercentage QLabel
+{
+    background-color:transparent;
+    color:#222222;
+}
+
+QFrame#CenteTabMidArea QToolBox::tab
+{
+    background-color:#e3e3e3;
+    color:#222222;
+     border-radius:2px;
+}
+
+QFrame#CenteTabMidArea QToolBox::tab:selected
+{
+    background-color:#adadad;
+    color:#222222;
+    border-radius:2px;
+}
+
+/*常用操作插件样式*/
+QFrame#CenteTabMidArea QFrame#fmBaseToolBack
+{
+        background-color:#f0f0f0;
+border:none;
+}
+
+QFrame#CenteTabMidArea QFrame#frButtonArea,QFrame#CenteTabMidArea QFrame#frSingleArea,QFrame#CenteTabMidArea QFrame#frDoubleArea
+{
+        background-color:#f0f0f0;
+border:none;
+}
+
+QFrame#CenteTabMidArea QFrame#fmBaseToolBack QGroupBox
+{
+border:none;
+margin-top:40px;
+background-color:transparent;
+}
+
+QFrame#CenteTabMidArea QFrame#fmBaseToolBack QGroupBox::title
+{
+ border-image: url(:/imageBlue/Common/tabNoSelect.png);
+ min-height:35px;
+min-width:100px;
+margin-left:10px;
+}
+
+
+QFrame#CenteTabMidArea QFrame#fmBaseToolBack QTabWidget::pane
+{
+        background-color:transparent;
+        border:none;
+}
+
+QFrame#CenteTabMidArea  QFrame#fmBaseToolBack QTabBar::tab:selected
+{
+   background-color:transparent;
+    color:#222222;
+    font:57 16px "文泉驿正黑";
+    outline:none;
+min-width:100px;
+border-image: url(:/imageBlue/Common/tabSelect.png);
+}
+
+
+QFrame#CenteTabMidArea QFrame#fmBaseToolBack QTabBar::tab:!selected
+{
+    background-color:transparent;
+    color:#222222;
+    font:57 16px "文泉驿正黑";
+outline:none;
+min-width:100px;
+border-image: url(:/imageBlue/Common/tabNoSelect.png);
+}
+
+QFrame#CenteTabMidArea QPushButton[PlayButton=true]:disabled
+{
+        border-image: url(:/imageBlack/Common/playBTDiable.png);
+        border:none;
+        background-color:transparent;
+}
+
+QFrame#CenteTabMidArea QPushButton[PlayButton=true]
+{
+          border-image: url(:/imageBlack/Common/playBT.png);
+        border:none;
+background-color:transparent;
+}
+
+QFrame#CenteTabMidArea QPushButton[PlayButton=true]:hover
+{
+        border-image: url(:/imageBlack/Common/playBTHover.png);
+        border:none;
+        background-color:transparent;
+}
+
+QFrame#CenteTabMidArea QPushButton[PlayButton=true]:pressed
+{
+        border-image: url(:/imageBlack/Common/playBTPress.png);
+        border:none;
+        background-color:transparent;
+}
+
+QFrame#CenteTabMidArea QPushButton[SendMsg1=true]:disabled
+{
+        border-image: url(:/imageBlack/Common/npushbuttondisable.png);
+        border:none;
+        background-color:transparent;
+        color:#222222;
+}
+
+QFrame#CenteTabMidArea QPushButton[SendMsg1=true]
+{
+        border-image: url(:/imageBlack/Common/npushbutton.png);
+        border:none;
+        background-color:transparent;
+        color:#222222;
+        font:57 16px "微软雅黑";
+        height:35px;
+}
+
+QFrame#CenteTabMidArea QPushButton[SendMsg1=true]:hover
+{
+        border-image: url(:/imageBlack/Common/npushbuttonhover.png);
+        border:none;
+        background-color:transparent;
+        color:#222222;
+}
+
+QFrame#CenteTabMidArea QPushButton[SendMsg1=true]:pressed
+{
+        border-image: url(:/imageBlack/Common/npushbuttonpressed.png);
+        border:none;
+        background-color:transparent;
+        color:#222222;
+}
+
+
+QFrame#CenteTabMidArea QPushButton[Station=true]:disabled
+{
+        border-image: url(:/imageBlack/Common/stationDisable.png);
+        border:none;
+        background-color:transparent;
+}
+
+QFrame#CenteTabMidArea QPushButton[Station=true]
+{
+        border-image: url(:/imageBlack/Common/station.png);
+        border:none;
+        background-color:transparent;
+        font:57 13px "微软雅黑";
+
+}
+
+QFrame#CenteTabMidArea QPushButton[Station=true]:hover
+{
+        border-image: url(:/imageBlack/Common/stationHover.png);
+        border:none;
+        background-color:transparent;
+}
+
+QFrame#CenteTabMidArea QPushButton[Station=true]:pressed
+{
+        border-image: url(:/imageBlack/Common/stationPress.png);
+        border:none;
+        background-color:transparent;
+}
+
+QFrame#CenteTabMidArea QPushButton[Station=true]:checked
+{
+        border-image: url(:/imageBlack/Common/stationPress.png);
+        border:none;
+        background-color:transparent;
+}
+
+
+QFrame#CenteTabMidArea QTabWidget[FScrollXmlTabWidget=true] QTabBar
+{
+        font:57 16px "文泉驿正黑";
+}
+
+
+QFrame#CenteTabMidArea QTabWidget[FScrollXmlTabWidget=true]   QTabBar::tab:selected
+{
+   background-color:#ffffff;
+   height:30px;
+   font:57 16px "文泉驿正黑";
+   outline:none;
+
+}
+
+QFrame#CenteTabMidArea QTabWidget[FScrollXmlTabWidget=true]  QTabBar::tab
+{
+outline:none;
+}
+
+QFrame#CenteTabMidArea QTabWidget[FScrollXmlTabWidget=true] QTabBar::tab:!selected
+{
+    background-color:none;
+    font:57 16px "文泉驿正黑";
+    height:30px;
+    outline:none;
+}
+
+QFrame#CenteTabMidArea QPushButton[OrderButton=true]:disabled
+{
+        border-image: url(:/imageBlack/Common/sendMsgBtnDisable.png);
+        border:none;
+        background-color:transparent;
+}
+
+QFrame#CenteTabMidArea QPushButton[OrderButton=true]
+{
+    border-image: url(:/imageBlack/Common/sendMsgBtn.png);
+    border:none;
+    background-color:transparent;
+    font:57 13px "微软雅黑";
+}
+
+QFrame#CenteTabMidArea QPushButton[OrderButton=true]:hover
+{
+    border-image: url(:/imageBlack/Common/sendMsgBtnHover.png);
+    border:none;
+    background-color:transparent;
+}
+
+QFrame#CenteTabMidArea QPushButton[OrderButton=true]:pressed
+{
+    border-image: url(:/imageBlack/Common/sendMsgBtnPress.png);
+    border:none;
+    background-color:transparent;
+}
+
+QFrame#CenteTabMidArea QPushButton[OrderButton=true]:checked
+{
+    border-image: url(:/imageBlack/Common/orderButtonCheck.png);
+    border:none;
+    background-color:transparent;
+}
+
+
+QFrame#CenteTabMidArea QPushButton[SendMsg2=true]:disabled
+{
+        border-image: url(:/imageBlack/Common/stationDisable.png);
+        border:none;
+        background-color:transparent;
+}
+
+QFrame#CenteTabMidArea QPushButton[SendMsg2=true]
+{
+          border-image: url(:/imageBlack/Common/station.png);
+        border:none;
+background-color:transparent;
+font:57 13px "微软雅黑";
+
+}
+
+QFrame#CenteTabMidArea QPushButton[SendMsg2=true]:hover
+{
+          border-image: url(:/imageBlack/Common/stationHover.png);
+        border:none;
+background-color:transparent;
+}
+
+QFrame#CenteTabMidArea QPushButton[SendMsg2=true]:pressed
+{
+          border-image: url(:/imageBlack/Common/stationPress.png);
+        border:none;
+background-color:transparent;
+}
+
+QFrame#CenteTabMidArea QPushButton[SendMsg2=true]:checked
+{
+          border-image: url(:/imageBlack/Common/stationPress.png);
+        border:none;
+background-color:transparent;
+}
+
+QFrame#CenteTabMidArea QPushButton[YKSendMsg=true]:disabled
+{
+        border-image: url(:/imageBlack/Common/playBTDiable.png);
+        border:none;
+        background-color:transparent;
+}
+
+QFrame#CenteTabMidArea QPushButton[YKSendMsg=true]
+{
+          border-image: url(:/imageBlack/Common/playBT.png);
+        border:none;
+background-color:transparent;
+font:57 12px "微软雅黑";
+
+}
+
+QFrame#CenteTabMidArea QPushButton[YKSendMsg=true]:hover
+{
+          border-image: url(:/imageBlack/Common/playBTHover.png);
+        border:none;
+background-color:transparent;
+}
+
+QFrame#CenteTabMidArea QPushButton[YKSendMsg=true]:pressed
+{
+          border-image: url(:/imageBlack/Common/playBTPress.png);
+        border:none;
+background-color:transparent;
+}
+
+QFrame#CenteTabMidArea QPushButton[YKSendMsg=true]:checked
+{
+          border-image: url(:/imageBlack/Common/playBTHover.png);
+        border:none;
+background-color:transparent;
+}
+
+QFrame#CenteTabMidArea    QScrollArea[SendMsgScrollArea=true],QFrame#CenteTabMidArea    QWidget[SendMsgScrollArea=true]
+{
+        border:none;
+        background-color:transparent;
+}
+
+QFrame#CenteTabMidArea    QAbstractItemView
+{
+        background-color:transparent;
+}
+
+
+
+

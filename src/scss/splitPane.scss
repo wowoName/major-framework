@@ -1,0 +1,32 @@
+@import './theme.scss';
+.splitpanes {
+  background-color: $primary-bg-color;
+}
+
+.splitpanes__splitter {
+  background-color: #17a6d4;
+  position: relative;
+}
+.splitpanes__splitter:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: opacity 0.4s;
+  background-color: rgba(48, 84, 133, 0.5);
+  opacity: 0;
+  z-index: 1;
+}
+.splitpanes__splitter:hover:before {
+  opacity: 1;
+}
+.splitpanes--vertical > .splitpanes__splitter:before {
+  left: -10px;
+  right: -10px;
+  height: 100%;
+}
+.splitpanes--horizontal > .splitpanes__splitter:before {
+  top: -10px;
+  bottom: -10px;
+  width: 100%;
+}
