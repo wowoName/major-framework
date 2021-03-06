@@ -8,7 +8,7 @@
           <span class="tab-title">{{item.title}}</span>
         </template>
         <div class="tabs-content">
-          <BaseComponent :pathName="item.pathName" />
+          <BaseComponent :pathName="item.pathName" :params="JSON.stringify(item.params)" />
         </div>
       </a-tab-pane>
     </a-tabs>
@@ -33,30 +33,31 @@ export default {
       activeKey: props.tabsData?.[0]?.id ?? '',
       currentTabs: props.tabsData
     })
-    //默认主视图
-    const defaultTabs = [{
-      title: '主视图',
-      id: 'home',
-      pathName: 'home',
-      closable: false
-    }]
+
     const methods = {
+      /**
+       * 设置 activeKey
+       * @param {String}  key
+       */
+      setActiveKey(key) {
+        state.activeKey = key
+      },
       /**
        * tab点击方法
        */
       tabClick() { },
       //移除tab
       removeTabs(targetKey) {
-        const tabsData = privateComputed.currentTabs.value
+        const tabsData = state.currentTabs
         const currentIndex = tabsData.findIndex(v => v.id === targetKey)
         //删除
-        context.emit('removeTabs', currentIndex - 1)
+        context.emit('removeTabs', currentIndex)
         //activeKey 改为上一条数据
         state.activeKey = tabsData[currentIndex - 1]['id']
       },
       //改变 tabs
       changeTabs(targetKey) {
-        console.log('改变的key', targetKey)
+        // console.log('改变的key', targetKey)
       }
     }
     return {
@@ -78,7 +79,7 @@ export default {
       position: relative;
     }
     .ant-tabs-bar {
-      border-bottom: 2px solid $primary-border-color;
+      border-bottom: 1px solid $primary-border-color;
     }
     .ant-tabs-ink-bar {
       background-color: rgb(32, 97, 124);

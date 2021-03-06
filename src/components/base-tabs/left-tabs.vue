@@ -9,12 +9,15 @@
           <span class="tab-title" v-html="item.title.split('').join('<br/>')"></span>
         </template>
         <div class="tabs-content">
-          <header class="tabs-content-header">{{item.title}}</header>
-          <main class="tabs-content-main">
+          <header class="tabs-content-header">
+            <span class="title">{{item.title}}</span>
+            <CloseOutlined @click="colsePane()" />
+          </header>
+          <main class="tabs-content-main" ref="mainRef">
             <div v-for="item in  mockTabContentData" :key="item.id" class="tabs-content-item"
               @click="item.show=!item.show">
-              <header> {{item.title}}</header>
-              <transition name="fade" mode="out-in">
+              <header>{{item.title}}</header>
+              <transition name="slide">
                 <section class="tabs-content-item-main" v-if="item.show">
                   第三方地方
                 </section>
@@ -29,7 +32,8 @@
 </template>
 
 <script>
-import { reactive, toRefs } from 'vue'
+import { CloseOutlined } from '@ant-design/icons-vue';
+import { reactive, toRefs, ref, onMounted } from 'vue'
 //mock tabs 数据
 const tabsData = [{
   title: '页面管理器',
@@ -47,6 +51,9 @@ const tabsData = [{
 
 export default {
   name: 'left-tabs',
+  components: {
+    CloseOutlined
+  },
   setup(props, context) {
     const state = reactive({
       activeKey: '1',
@@ -65,18 +72,22 @@ export default {
       }],
       collapsed: false,
     })
+    const { emit } = context
     const methods = {
+      //关闭左侧悬浮窗
+      colsePane() {
+        emit('colsePane')
+      },
       /**
        * tab点击回调
        * @param {*} activeKety 当前点击tab key
        */
       tabClick: activeKey => {
         state.activeKey = activeKey
-        // state.collapsed = activeKey === state.activeKey && !state.collapsed
-        // state.collapsed && (state.activeKey = '')
-        // context.emit('tabClick', state.collapsed)
+        emit('tabClick')
       }
     }
+
     return {
       tabsData,
       ...methods,
@@ -86,17 +97,12 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-// .fade-enter-active,
-// .fade-leave-active {
-//   transition: opacity 0.5s ease;
-// }
-
-// .fade-enter {
-//   opacity: 1;
-// }
-// .fade-leave-active {
-//   opacity: 0;
-// }
+.slide-enter-active {
+  animation: slider 0.2s;
+}
+.slide-leave-active {
+  animation: slider 0.2s reverse;
+}
 
 .left-tabs-com {
   position: absolute;
@@ -125,9 +131,15 @@ export default {
       overflow: hidden;
       .tabs-content-header {
         @include normal-padding();
-        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         border-bottom: 1px solid $primary-border-color;
         color: $primary-font-color;
+        .title {
+          flex: auto;
+          @include major-text-ellipsis();
+        }
       }
       .tabs-content-main {
         height: calc(100% - 33px);
@@ -136,11 +148,15 @@ export default {
         color: $primary-font-color;
         .tabs-content-item {
           margin-top: 10px;
+          @include normal-padding();
+          border-radius: 3px;
+          background-color: rgb(48, 84, 133);
           header {
-            @include normal-padding();
-            background-color: rgb(48, 84, 133);
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
             color: $primary-font-color;
-            border-radius: 3px;
             cursor: pointer;
           }
           .tabs-content-item-main {
@@ -148,7 +164,11 @@ export default {
             margin: 2px;
             border: 1px solid rgb(48, 84, 133);
             border-radius: 3px;
-            // background: #ececec;
+            overflow: auto;
+            @include small-padding();
+            font-size: 13px;
+            color: $primary-font-color;
+            background: #002945;
           }
         }
       }

@@ -1,21 +1,30 @@
 <!--  -->
  <template>
-  <div class="major-modal" ref="modalCon" :style="currentStyle" @click="clickModal()">
-    <header class="modal-title" ref="header">
-      <span class="modal-title-item">{{data.title}}</span>
-      <a-tooltip title="关闭" placement="right">
-        <LoadingOutlined v-if="closeLoading" />
-        <CloseOutlined @click="closeModal()" v-else />
-      </a-tooltip>
-    </header>
-    <div class="modal-content">
-      <BaseComponent :path-name="data.pathName" ref="component" />
-    </div>
+  <div :class="['major-modal-com',{'major-opacity':opacity}]" :style="currentStyle" @click="clickModal()"
+    ref="modalCon">
+    <transition name="bounce" mode="out-in">
+      <div class="major-modal" v-if="animation">
+        <header class="modal-title" ref="header">
+          <span class="modal-title-item">{{data.title}}</span>
+          <a-tooltip title="关闭" placement="right">
+            <LoadingOutlined v-if="closeLoading" />
+            <CloseOutlined @click.prevent.stop="closeModal()" v-else />
+          </a-tooltip>
+        </header>
+        <div class="modal-content">
+          {{currentParams}}--
+          <br>
+          <br>
+          {{params}}
+          <BaseComponent :path-name="data.pathName" :params="JSON.stringify(params)" ref="component" />
+        </div>
+      </div>
+    </transition>
   </div>
 </template>
 
   <script>
-import { reactive, toRefs, computed, watch, onMounted, onBeforeMount, ref } from 'vue'
+import { reactive, toRefs, computed, watch, onMounted, onBeforeUnmount, nextTick, ref } from 'vue'
 import { CloseOutlined, LoadingOutlined } from '@ant-design/icons-vue';
 import BaseComponent from '@/components/baseContainer.vue'
 export default {
@@ -25,13 +34,21 @@ export default {
     LoadingOutlined
   },
   props: {
+    //参数
+    params: {
+      type: Object,
+      default: () => ({})
+    },
     //zIndex
     mesh: Number,
+    zIndex: Number,
     //样式
     dialogStyle: {
       type: Object,
       default: () => ({})
     },
+    //当前是否透明
+    opacity: Boolean,
     data: {
       type: Object,
       default: () => ({
@@ -56,8 +73,11 @@ export default {
     const state = reactive({
       visible: true,
       closeLoading: false,
+      animation: false,
+      currentParams: props.params,
       //样式
-      currentStyle: Object.assign({}, props.dialogStyle)
+      currentStyle: Object.assign({}, props.dialogStyle),
+      aaaa: {}
     })
     //拖拽数据
     const dragHandlerData = {
@@ -69,17 +89,21 @@ export default {
     const dragEvent = {
       handleMove(event) {
         const left = event.pageX - dragHandlerData.mouseDownX,
-          top = event.pageY - dragHandlerData.mouseDownY,
-          styleObje = contain.parentNode.style;
+          top = event.pageY - dragHandlerData.mouseDownY;
         state.currentStyle.top = `${top}px`
         state.currentStyle.left = `${left}px`
-
       },
       initialEvent() {
         contain.addEventListener('mousedown', function (e) {
-          dragHandlerData.mouseDownX = e.pageX - contain.parentNode.offsetLeft
-          dragHandlerData.mouseDownY = e.pageY - contain.parentNode.offsetTop
-          contain.parentNode.style.zIndex = props.mesh
+          dragHandlerData.mouseDownX = e.pageX - modalCon.value.offsetLeft
+          dragHandlerData.mouseDownY = e.pageY - modalCon.value.offsetTop
+          console.log(state.currentStyle.zIndex, props.mesh)
+          if (state.currentStyle.zIndex !== props.mesh) {
+            let zIndex = props.mesh
+            state.currentStyle.zIndex = ++zIndex
+            emit('clickPane')
+          }
+
           document.addEventListener('mousemove', dragEvent.handleMove, false)
         })
         document.addEventListener('mouseup', dragEvent.removeMove, false)
@@ -91,15 +115,19 @@ export default {
     const methods = {
       //modal点击事件 当前modal置顶
       clickModal() {
-        emit('click')
-        contain.parentNode.style.zIndex = props.mesh
+        // emit('clickPane')
+        // let zIndex = props.mesh
+        // state.currentStyle.zIndex = ++zIndex
       },
       //关闭modal
       async closeModal() {
         state.closeLoading = true
         const response = await component.value.close()
         console.log(response)
-        emit('close', props.data.id)
+        state.animation = false
+        setTimeout(() => {
+          emit('close', props.data.id)
+        }, 500)
 
       }
     }
@@ -117,23 +145,36 @@ export default {
         currentStyle.height = clientRect.height + 'px'
         height = clientRect.height
       }
-
       let left = (clientRect.width - width) / 2 + 'px',
         top = (clientRect.height - height) / 2 + 'px'
+
       state.currentStyle = Object.assign({}, state.currentStyle, currentStyle, {
         top: top,
-        left: left
+        left: left,
+        zIndex: props.zIndex
       })
     }
 
+    //监听 zIndex 变化，打开已经打开的modal时 置顶
+    watch(
+      () => props.zIndex,
+      value => {
+        state.currentStyle.zIndex !== props.zIndex && (state.currentStyle.zIndex = value + 1)
+      },
+      {
+        deep: true
+      }
+    )
     onMounted(() => {
-      //计算位置
-      getCurrentStyleObj()
-      contain = header.value;
-      //初始化拖拽事件
-      dragEvent.initialEvent();
+      state.animation = true
+      nextTick(() => {
+        //计算位置
+        getCurrentStyleObj()
+        contain = header.value;
+        //初始化拖拽事件
+        dragEvent.initialEvent();
+      })
     })
-
     return {
       modalCon,
       header,
@@ -145,52 +186,51 @@ export default {
 }
   </script>
   <style lang='scss' scoped>
-.major-modal {
+.bounce-enter-active {
+  animation: modelanimation 0.2s;
+}
+.bounce-leave-active {
+  animation: modelanimation 0.2s reverse;
+}
+.major-opacity {
+  opacity: 0;
+}
+.major-modal-com {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 600px;
   height: 400px;
-  background-color: #00536e;
-  box-shadow: 0 4px 12px #2f3e52;
-  border-radius: 2px;
-  animation: modelAnimation 2s 1 ease-out;
+  border-radius: 3px;
   z-index: 1;
-  .modal-title {
+  .major-modal {
     width: 100%;
-    border-bottom: 1px solid #305485;
-    @include large-padding();
-
+    height: 100%;
+    background-color: #00536e;
+    box-shadow: 0 4px 12px #2f3e52;
     border-radius: 2px;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    background: linear-gradient(to bottom, #0f6a88, #063e51);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-size: 16px;
-    font-weight: 500;
-    color: #ffffff;
-    cursor: pointer;
-    .modal-title-item {
-      flex: auto;
+    z-index: 1;
+    .modal-title {
+      width: 100%;
+      border-bottom: 1px solid #305485;
+      @include large-padding();
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      background: linear-gradient(to bottom, #0f6a88, #063e51);
+      @include major-text-ellipsis();
+      font-size: 16px;
+      font-weight: 500;
+      color: #ffffff;
+      cursor: pointer;
+      .modal-title-item {
+        flex: auto;
+      }
     }
-  }
-  .modal-content {
-    height: calc(100% - 46px);
-    @include large-padding();
-    overflow: auto;
-  }
-}
-@keyframes modelAnimation {
-  0% {
-    transform: translate3d(0, -50px, 0);
-    opacity: 0;
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
+    .modal-content {
+      height: calc(100% - 46px);
+      @include large-padding();
+      overflow: auto;
+    }
   }
 }
 </style>

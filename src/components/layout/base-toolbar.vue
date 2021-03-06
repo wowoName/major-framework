@@ -4,7 +4,7 @@
     <div v-for="item in toolData" :key="item.id" class="tool-bar-item">
       <span class="item-title">{{item.title}}</span>
       <ul class="bar-item-list">
-        <li v-for="list in item.children" :key="list.id" @click="addModal()">
+        <li v-for="list in item.children" :key="list.id" @click.stop="clickTabs(list)">
           <i :class="['iconfont',list.icon]"></i>
           <span>{{list.title}}</span>
         </li>
@@ -14,7 +14,6 @@
 </template>
 
   <script>
-import { reactive, toRefs, computed, watch, onMounted, onBeforeUnmount } from 'vue'
 export default {
   name: 'base-toolbar',
   props: {
@@ -25,20 +24,32 @@ export default {
         title: '新增',
         children: [{
           icon: 'iconchangjing',
-          title: '新建场景'
+          title: '新建场景',
+          id: 'scenario',
+          type: 'modal',
+          params: {
+            name: '新建场景',
+            desc: '这是我的参数'
+          }
         }, {
           icon: 'iconchangjing',
-          title: '模板创建'
+          title: '模板创建',
+          id: 'template',
+          type: 'modal'
         }]
       }, {
         id: 2,
         title: '1',
         children: [{
           icon: 'iconchangjing',
-          title: '新建场景'
+          title: '新建场景吧',
+          id: 'scenario1',
+          type: 'modal'
         }, {
           icon: 'iconchangjing',
-          title: '模板创建'
+          title: '模板创建吧',
+          id: 'template1',
+          type: 'modal'
         }]
       }]
     }
@@ -46,8 +57,10 @@ export default {
   setup(props, context) {
     const { emit } = context
     const methods = {
-      addModal() {
-        emit('addModal')
+      clickTabs(item) {
+        !item?.params && (item.params = {})
+        item.params.desc = "这是我的参数" + (+new Date())
+        emit('clickMenu', item)
       }
     }
     return {
@@ -75,13 +88,14 @@ export default {
       position: absolute;
       top: -11px;
       left: 20px;
-      max-width: 100%;
+      max-width: calc(100% - 40px);
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
       background-color: $primary-bg-color;
       padding: 0 5px;
       font-size: 13px;
+      cursor: pointer;
     }
     .bar-item-list {
       @include major-flex(space-around);
@@ -101,7 +115,7 @@ export default {
           color: $primary-font-color;
           transition: transform 0.2s;
           &:hover {
-            transform: rotate(-10deg);
+            transform: scale(1.1);
           }
         }
         span {

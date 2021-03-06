@@ -9,6 +9,10 @@ import './scss/ant-design-theme.scss'
 
 import "splitpanes/dist/splitpanes.css";
 import './scss/splitPane.scss'
+import sayHello from './mixin/major-router'
 
 
-createApp(App).use(store).use(router).use(Antd).mount('#app')
+const app=createApp(App)
+app.config.globalProperties.go = sayHello
+app.use(sayHello)
+app.use(store).use(router).use(Antd).mount('#app')

@@ -1,14 +1,21 @@
 <!-- 组件 -->
  <template>
-  <CurrentComponent ref="content" />
+  <div>
+    异步组件：
+    <br>
+    {{$attrs}}
+    <br> <br>
+    <CurrentComponent ref="content" v-bind="$attrs" />
+  </div>
+
 </template>
   <script>
 import ErrorComponent from '@/views/error/index.vue'
 import LoadingComponent from '@/views/loading/index.vue'
-import { defineAsyncComponent } from 'vue'
+import { defineAsyncComponent, reactive } from 'vue'
 //所有组件路径对象
 import componentPath from '@/router/component.js'
-import { ref } from 'vue'
+import { ref, toRefs, computed, watch, watchEffect } from 'vue'
 export default {
   components: {
     ErrorComponent,
@@ -18,13 +25,16 @@ export default {
     pathName: {
       type: String,
       default: 'home'
-    }
+    },
   },
   setup(props, context) {
     const content = ref(null)
+    console.log(context.attrs?.params)
+    const state = reactive({
+      currentParams: JSON.parse(context.attrs?.params ?? '{}')
+    })
     //路径
     const path = componentPath[props.pathName] ?? '../views/error/index.vue'
-    console.log(path, '路径')
     //引入当前组件
     const CurrentComponent = defineAsyncComponent({
       loader: () => import(path),
@@ -48,9 +58,14 @@ export default {
         else return new Promise((resolve) => resolve(true))
       }
     }
+    watch(() => props,
+      () => {
+        console.log('坎坎坷坷')
+      })
     return {
       CurrentComponent,
       content,
+      ...toRefs(state),
       ...methdos
     }
   },

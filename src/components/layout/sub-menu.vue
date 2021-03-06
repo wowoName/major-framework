@@ -1,6 +1,6 @@
 <!--  -->
 <template>
-  <a-sub-menu :key="menuInfo.key" v-bind="$attrs">
+  <a-sub-menu :key="menuInfo.id" v-bind="$attrs">
     <template #title>
       <span>
         <!-- <MailOutlined /> -->
@@ -9,13 +9,13 @@
     </template>
     <template v-for="item in menuInfo.children">
       <template v-if="!item.children">
-        <a-menu-item :key="item.key">
+        <a-menu-item :key="item.id">
           <!-- <PieChartOutlined /> -->
           <span class="menu-title">{{ item.title }}</span>
         </a-menu-item>
       </template>
       <template v-else>
-        <sub-menu :menu-info="item" :key="item.key" />
+        <sub-menu :menu-info="item" :key="item.id" />
       </template>
     </template>
   </a-sub-menu>
