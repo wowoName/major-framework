@@ -17,7 +17,7 @@
 
   <script>
 import { reactive, toRefs, computed } from 'vue'
-import BaseComponent from '@/components/baseContainer.vue'
+import BaseComponent from '@com/baseContainer.vue'
 export default {
   props: {
     tabsData: {

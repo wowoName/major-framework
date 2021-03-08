@@ -27,9 +27,9 @@
 </template>
 
   <script>
-import { reactive, toRefs, computed, watch, onMounted, onBeforeUnmount, nextTick, ref } from 'vue'
+import { reactive, toRefs, watch, onMounted, nextTick, ref } from 'vue'
 import { CloseOutlined, LoadingOutlined } from '@ant-design/icons-vue';
-import BaseComponent from '@/components/baseContainer.vue'
+import BaseComponent from '@com/baseContainer.vue'
 export default {
   components: {
     BaseComponent,

@@ -39,12 +39,11 @@
       <BaseModal :data="item" :dialogStyle="item.style" :opacity="modalOpacity" @clickPane="mesh++"
         :params="item.params" :zIndex='item.zIndex' :mesh="mesh" @close="closeModal" />
     </template>
-
   </section>
 </template>
 
 <script >
-import { reactive, toRefs, ref, computed, onMounted, watch } from 'vue'
+import { reactive, toRefs, ref, computed, onMounted } from 'vue'
 //导航栏
 import BaseMenu from '@com/layout/base-menu.vue'
 //快捷入口
@@ -69,7 +68,6 @@ export default {
     Pane
   },
   setup() {
-
     const state = reactive({
       currentKey: 'alipay',
       mesh: 2,//当前modal zIndex 值
@@ -99,9 +97,12 @@ export default {
         pathName: 'home',
         closable: false
       }, {
-        title: '新增',
+        title: 'lis',
         id: 1,
-        pathName: '',
+        pathName: 'lisIndex',
+        params: {
+          name: '名称'
+        },
         closable: true
       }],
       bottomTabs: [{
@@ -163,11 +164,6 @@ export default {
        */
       removeTabs: currentIndex => {
         currentIndex !== -1 && state.tabsData.splice(currentIndex, 1)
-        // state.tabsData.push({
-        //   title: '导弹',
-        //   closable: true,
-        //   id: +new Date()
-        // })
       }
     }
     //打开一个tabs

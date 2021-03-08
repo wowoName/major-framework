@@ -47,7 +47,7 @@ export default {
           setTimeout(() => {
             console.log('关闭')
             resolve(true)
-          }, 2000)
+          }, 200)
         })
       }
     }

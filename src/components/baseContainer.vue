@@ -1,13 +1,6 @@
 <!-- 组件 -->
  <template>
-  <div>
-    异步组件：
-    <br>
-    {{$attrs}}
-    <br> <br>
-    <CurrentComponent ref="content" v-bind="$attrs" />
-  </div>
-
+  <CurrentComponent ref="content" v-bind="$attrs" />
 </template>
   <script>
 import ErrorComponent from '@/views/error/index.vue'
