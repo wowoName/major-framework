@@ -8,7 +8,7 @@
           <span class="tab-title">{{item.title}}</span>
         </template>
         <div class="tabs-content">
-          <BaseComponent :pathName="item.pathName" :params="JSON.stringify(item.params)" />
+          <BaseComponent :pathName="item.pathName" :params="item.params" />
         </div>
       </a-tab-pane>
     </a-tabs>
@@ -16,7 +16,7 @@
 </template>
 
   <script>
-import { reactive, toRefs, computed } from 'vue'
+import { reactive, toRefs } from 'vue'
 import BaseComponent from '@com/baseContainer.vue'
 export default {
   props: {
@@ -33,7 +33,6 @@ export default {
       activeKey: props.tabsData?.[0]?.id ?? '',
       currentTabs: props.tabsData
     })
-
     const methods = {
       /**
        * 设置 activeKey
@@ -87,6 +86,11 @@ export default {
     svg {
       color: $primary-font-color;
     }
+    .ant-tabs-tab {
+      &:hover {
+        background: rgba(0, 83, 110, 0.6) !important;
+      }
+    }
     .ant-tabs-tab-active {
       background: #00536e !important;
     }
@@ -106,7 +110,8 @@ export default {
     left: 0;
     bottom: 20px;
     right: 0;
-    @include large-padding();
+    padding: 10px 15px 20px 15px;
+    box-sizing: border-box;
     color: #fff;
   }
 }

@@ -14,7 +14,7 @@
             </section>
           </div>
         </pane>
-        <pane :size="paneSizeSibling">
+        <pane :size="paneSizeSibling" class="哈哈哈">
           <splitpanes horizontal>
             <pane>
               <div class="pane-item">

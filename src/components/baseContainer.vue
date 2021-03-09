@@ -22,10 +22,6 @@ export default {
   },
   setup(props, context) {
     const content = ref(null)
-    console.log(context.attrs?.params)
-    const state = reactive({
-      currentParams: JSON.parse(context.attrs?.params ?? '{}')
-    })
     //路径
     const path = componentPath[props.pathName] ?? '../views/error/index.vue'
     //引入当前组件
@@ -58,7 +54,6 @@ export default {
     return {
       CurrentComponent,
       content,
-      ...toRefs(state),
       ...methdos
     }
   },

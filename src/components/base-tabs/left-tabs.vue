@@ -11,7 +11,7 @@
         <div class="tabs-content">
           <header class="tabs-content-header">
             <span class="title">{{item.title}}</span>
-            <CloseOutlined @click="colsePane()" />
+            <CloseOutlined @click="colsePane()" class="close-icon" />
           </header>
           <main class="tabs-content-main" ref="mainRef">
             <div v-for="item in  mockTabContentData" :key="item.id" class="tabs-content-item"
@@ -139,6 +139,9 @@ export default {
         .title {
           flex: auto;
           @include major-text-ellipsis();
+        }
+        .close-icon {
+          padding: 0 5px;
         }
       }
       .tabs-content-main {

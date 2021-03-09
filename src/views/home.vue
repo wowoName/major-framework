@@ -21,7 +21,6 @@ export default {
     console.log(context, '急急急', props)
     //路由跳转 引入
     const { proxy } = getCurrentInstance()
-
     //接受参数  string 类型！！！
     const state = reactive({
       params: context.attrs
@@ -47,7 +46,7 @@ export default {
           setTimeout(() => {
             console.log('关闭')
             resolve(true)
-          }, 200)
+          })
         })
       }
     }
